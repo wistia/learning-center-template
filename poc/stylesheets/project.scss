@@ -1,0 +1,79 @@
+@import "main";
+
+#local-header-container {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  #local-header {
+    text-align: left;
+    width: 960px;
+    margin: 0 auto;
+    background-color: $white;
+    padding: 35px 0;
+
+    .light-bulb {
+      float: left;
+    }
+
+
+    .project-title {
+      float: left;
+      width: 240px;
+
+      h1 {
+        width: 240px;
+        font-size: 32px;
+        color: #67686a;
+        margin: 0;
+        padding: 0 20px;
+      }
+    }
+
+    .project-description {
+      float: right;
+      width: 620px;
+    }
+  }
+}
+
+#media-tiles-container {
+  background-color: $light_grey_background;
+  padding: 40px 0;
+  text-align: center;
+
+  #media-tiles {
+    width: 960px;
+    text-align: left;
+    margin: 0 auto;
+
+    .media-tile-container {
+      width: 300px;
+      float: left;
+      text-align: center;
+      margin: 40px 10px;
+
+      .media-tile {
+        background-color: #aaa;
+        color: #6a6a6a;
+
+        img {
+          margin: 0 auto;
+        }
+
+        .title {
+          text-align: left;
+          padding: 20px 20px 10px 20px;
+          font-size: 30px;
+          background-color: $white;
+        }
+
+        .description {
+          text-align: left;
+          padding: 10px 20px 20px 20px;
+          background-color: $white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,148 @@
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: 'Open Sans', helvetica, sans-serif; }
+
+#global-header-container {
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+  #global-header-container #global-header {
+    margin: 0 auto;
+    text-align: left;
+    width: 960px;
+    height: 70px; }
+    #global-header-container #global-header .logo {
+      float: left; }
+      #global-header-container #global-header .logo a {
+        background: url("../images/wistia_logo.png") no-repeat;
+        width: 200px;
+        height: 40px;
+        display: inline-block;
+        margin-top: 15px; }
+      #global-header-container #global-header .logo a:hover {
+        background-position: 0 -40px; }
+    #global-header-container #global-header .links {
+      float: right; }
+      #global-header-container #global-header .links a {
+        color: #8d8d8d;
+        text-decoration: none;
+        padding: 20px 30px;
+        text-transform: uppercase;
+        display: inline-block; }
+      #global-header-container #global-header .links a:hover {
+        color: #666; }
+
+#local-header {
+  background-color: white;
+  padding: 35px 0; }
+
+#intro-video-container {
+  background-color: #e6e6e6;
+  text-align: center;
+  margin: 0;
+  padding: 0; }
+  #intro-video-container #intro-video {
+    width: 960px;
+    text-align: left;
+    margin: 0 auto; }
+
+#main-container {
+  background-color: #f4f4f4;
+  padding: 40px 0;
+  text-align: center; }
+  #main-container #main {
+    width: 960px;
+    text-align: left;
+    margin: 0 auto; }
+
+.project {
+  margin-bottom: 40px; }
+  .project .green {
+    background-color: #bdd977; }
+  .project .sea_foam {
+    background-color: #98d2ae; }
+  .project .blue {
+    background-color: #a3dcea; }
+  .project .purple {
+    background-color: #80afde; }
+  .project .header {
+    color: white;
+    padding: 10px 40px;
+    font-size: 21px; }
+    .project .header .title {
+      text-transform: uppercase;
+      font-weight: bold;
+      float: left; }
+    .project .header .info {
+      float: right; }
+  .project .videos {
+    background-color: white; }
+    .project .videos ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 30px 0 27px 0; }
+      .project .videos ul li {
+        float: left;
+        padding: 0 18px;
+        margin: 0; }
+
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+#local-header-container {
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+  #local-header-container #local-header {
+    text-align: left;
+    width: 960px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 35px 0; }
+    #local-header-container #local-header .light-bulb {
+      float: left; }
+    #local-header-container #local-header .video-title {
+      float: left;
+      width: 240px; }
+      #local-header-container #local-header .video-title h1 {
+        width: 240px;
+        font-size: 32px;
+        color: #67686a;
+        margin: 0;
+        padding: 0 20px; }
+    #local-header-container #local-header .video-carousel {
+      float: right;
+      width: 620px; }
+      #local-header-container #local-header .video-carousel ul {
+        list-style-type: none; }
+        #local-header-container #local-header .video-carousel ul li {
+          float: left;
+          padding: 0 10px; }
+
+#video-container {
+  background-color: #f4f4f4; }
+
+#video-info-container #video-info {
+  width: 960px;
+  text-align: left;
+  margin: 0 auto; }
+  #video-info-container #video-info #info {
+    float: left;
+    width: 240px;
+    margin: 20px 0; }
+    #video-info-container #video-info #info .title {
+      font-size: 30px;
+      padding-bottom: 10px; }
+  #video-info-container #video-info #comments {
+    float: right;
+    width: 700px; }

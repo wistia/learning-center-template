@@ -1,0 +1,219 @@
+>>> Sass is watching for changes. Press Ctrl-C to stop.
+  overwrite video.css
+WARNING: Listen has fallen back to polling, learn more at https://github.com/guard/listen#fallback.
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+  overwrite video.css
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+  overwrite video.css
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+  overwrite video.css
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/main.scss
+  overwrite video.css
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/main.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/main.scss
+  overwrite video.css
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/main.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+  overwrite video.css
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/project.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/project.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/index.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/index.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/main.scss
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/main.scss
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid C>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/main.scss
+  overwrite index.css
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/main.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/project.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/project.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/index.scss
+  overwrite index.css
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/index.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+SignalException: SIGTERM
+  Use --trace for backtrace.
+m/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+SignalException: SIGTERM
+  Use --trace for backtrace.
+  error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/main.scss
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/main.scss
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+      error video.scss (Line 50: Invalid CSS after "...ckground-color:": expected expression (e.g. 1px, bold), was "}")
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+  overwrite video.css
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/project.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/project.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/index.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/index.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+  overwrite video.css
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+  overwrite video.css
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+  overwrite video.css
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+  overwrite video.css
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+      error video.scss (Line 82: Invalid CSS after "}": expected "}", was "")
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+      error video.scss (Line 82: Invalid CSS after "}": expected "}", was "")
+      error video.scss (Line 82: Invalid CSS after "}": expected "}", was "")
+      error video.scss (Line 82: Invalid CSS after "}": expected "}", was "")
+      error video.scss (Line 82: Invalid CSS after "}": expected "}", was "")
+      error video.scss (Line 82: Invalid CSS after "}": expected "}", was "")
+      error video.scss (Line 82: Invalid CSS after "}": expected "}", was "")
+      error video.scss (Line 82: Invalid CSS after "}": expected "}", was "")
+      error video.scss (Line 82: Invalid CSS after "}": expected "}", was "")
+      error video.scss (Line 82: Invalid CSS after "}": expected "}", was "")
+      error video.scss (Line 82: Invalid CSS after "}": expected "}", was "")
+      error video.scss (Line 82: Invalid CSS after "}": expected "}", was "")
+      error video.scss (Line 82: Invalid CSS after "}": expected "}", was "")
+      error video.scss (Line 82: Invalid CSS after "}": expected "}", was "")
+      error video.scss (Line 82: Invalid CSS after "}": expected "}", was "")
+      error video.scss (Line 82: Invalid CSS after "}": expected "}", was "")
+      error video.scss (Line 82: Invalid CSS after "}": expected "}", was "")
+      error video.scss (Line 82: Invalid CSS after "}": expected "}", was "")
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+  overwrite video.css
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+  overwrite video.css
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+  overwrite video.css
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+  overwrite video.css
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+  overwrite video.css
+>>> Change detected to: /home/jim/wistia/learning-center/stylesheets/video.scss
+SignalException: SIGTERM
+  Use --trace for backtrace.

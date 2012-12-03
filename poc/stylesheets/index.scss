@@ -1,0 +1,72 @@
+@import "main";
+
+#local-header {
+  background-color: $white;
+  padding: 35px 0;
+}
+
+#intro-video-container {
+  background-color: #e6e6e6;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  #intro-video {
+    width: 960px;
+    text-align: left;
+    margin: 0 auto;
+  }
+}
+
+#main-container {
+  background-color: $light_grey_background;
+  padding: 40px 0;
+  text-align: center;
+
+  #main {
+    width: 960px;
+    text-align: left;
+    margin: 0 auto;
+  }
+}
+
+.project {
+  margin-bottom: 40px;
+
+  .green { background-color: $green; }
+  .sea_foam { background-color: $sea_foam; }
+  .blue { background-color: $blue; }
+  .purple { background-color: $purple }
+
+  .header {
+    color: $white;
+    padding: 10px 40px;
+    font-size: 21px;
+
+    .title {
+      text-transform: uppercase;
+      font-weight: bold;
+      float: left;
+    }
+
+    .info {
+      float: right;
+    }
+  }
+
+  .videos {
+    background-color: $white;
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 30px 0 27px 0;
+
+      li {
+        float: left;
+        padding: 0 18px;
+        margin: 0;
+      }
+    }
+  }
+}

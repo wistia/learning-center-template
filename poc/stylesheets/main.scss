@@ -1,0 +1,141 @@
+$green: #BDD977;
+$sea_foam: #98D2AE;
+$blue: #A3DCEA;
+$purple: #80AFDE;
+$white: #fff;
+$light_grey_background: #f4f4f4;
+
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+  font-family: 'Open Sans', helvetica, sans-serif;
+}
+
+#global-header-container {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  #global-header {
+    margin: 0 auto;
+    text-align: left;
+    width: 960px;
+    height: 70px;
+
+    .logo {
+      float: left;
+
+      a {
+        background: url('../images/wistia_logo.png') no-repeat;
+        width: 200px;
+        height: 40px;
+        display: inline-block;
+        margin-top: 15px;
+      }
+
+      a:hover {
+        background-position: 0 -40px;
+      }
+    }
+
+    .links {
+      float: right;
+
+      a {
+        color: #8d8d8d;
+        text-decoration: none;
+        padding: 20px 30px;
+        text-transform: uppercase;
+        display: inline-block;
+      }
+
+      a:hover {
+        color: #666;
+      }
+    }
+  }
+}
+
+#local-header {
+  background-color: $white;
+  padding: 35px 0;
+}
+
+#intro-video-container {
+  background-color: #e6e6e6;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  #intro-video {
+    width: 960px;
+    text-align: left;
+    margin: 0 auto;
+  }
+}
+
+#main-container {
+  background-color: $light_grey_background;
+  padding: 40px 0;
+  text-align: center;
+
+  #main {
+    width: 960px;
+    text-align: left;
+    margin: 0 auto;
+  }
+}
+
+.project {
+  margin-bottom: 40px;
+
+  .green { background-color: $green; }
+  .sea_foam { background-color: $sea_foam; }
+  .blue { background-color: $blue; }
+  .purple { background-color: $purple }
+
+  .header {
+    color: $white;
+    padding: 10px 40px;
+    font-size: 21px;
+
+    .title {
+      text-transform: uppercase;
+      font-weight: bold;
+      float: left;
+    }
+
+    .info {
+      float: right;
+    }
+  }
+
+  .videos {
+    background-color: $white;
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 30px 0 27px 0;
+
+      li {
+        float: left;
+        padding: 0 18px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+

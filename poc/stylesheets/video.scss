@@ -1,0 +1,85 @@
+@import "main";
+
+#local-header-container {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  #local-header {
+    text-align: left;
+    width: 960px;
+    margin: 0 auto;
+    background-color: $white;
+    padding: 35px 0;
+
+    .light-bulb {
+      float: left;
+    }
+
+    .video-title {
+      float: left;
+      width: 240px;
+
+      h1 {
+        width: 240px;
+        font-size: 32px;
+        color: #67686a;
+        margin: 0;
+        padding: 0 20px;
+      }
+    }
+
+    .video-carousel {
+      float: right;
+      width: 620px;
+
+      ul {
+        list-style-type: none;
+
+        li {
+          float: left;
+          padding: 0 10px;
+        }
+      }
+    }
+  }
+}
+
+
+#video-container {
+  background-color: $light_grey_background;
+}
+
+
+#video-info-container {
+  #video-info {
+    width: 960px;
+    text-align: left;
+    margin: 0 auto;
+
+    #info {
+      float: left;
+      width: 240px;
+      margin: 20px 0;
+
+      .title {
+        font-size: 30px;
+        padding-bottom: 10px;
+      }
+    }
+
+    #comments {
+      float: right;
+      width: 700px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
