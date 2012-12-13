@@ -61,20 +61,19 @@ body {
 .project {
   margin-bottom: 40px; }
   .project .green {
-    background-color: #bdd977; }
+    background-color: #87d452; }
   .project .sea_foam {
-    background-color: #98d2ae; }
+    background-color: #5ad4a0; }
   .project .blue {
-    background-color: #a3dcea; }
+    background-color: #63d0db; }
   .project .purple {
-    background-color: #80afde; }
+    background-color: #5c9ed6; }
   .project .header {
     color: white;
     padding: 10px 40px;
     font-size: 21px; }
     .project .header .title {
       text-transform: uppercase;
-      font-weight: bold;
       float: left; }
     .project .header .info {
       float: right; }
@@ -108,7 +107,7 @@ body {
     width: 960px;
     margin: 0 auto;
     background-color: white;
-    padding: 35px 0; }
+    padding: 19px 0px 27px 0px; }
     #local-header-container #local-header .light-bulb {
       float: left; }
     #local-header-container #local-header .project-title {
@@ -117,12 +116,19 @@ body {
       #local-header-container #local-header .project-title h1 {
         width: 240px;
         font-size: 32px;
-        color: #67686a;
+        color: #646059;
         margin: 0;
-        padding: 0 20px; }
+        padding: 1px 20px;
+        font-weight: 100;
+        letter-spacing: 1px; }
     #local-header-container #local-header .project-description {
       float: right;
-      width: 620px; }
+      width: 620px;
+      color: #646059;
+      font-weight: 100;
+      padding-top: 7px;
+      font-size: 16px;
+      line-height: 24px; }
 
 #media-tiles-container {
   background-color: #f4f4f4;
@@ -131,12 +137,12 @@ body {
   #media-tiles-container #media-tiles {
     width: 960px;
     text-align: left;
-    margin: 0 auto; }
+    margin: -7px auto 0px auto; }
     #media-tiles-container #media-tiles .media-tile-container {
-      width: 300px;
+      width: 260px;
       float: left;
       text-align: center;
-      margin: 40px 10px; }
+      margin: 32px 22px 32px 22px; }
       #media-tiles-container #media-tiles .media-tile-container .media-tile {
         background-color: #aaa;
         color: #6a6a6a; }
@@ -144,10 +150,14 @@ body {
           margin: 0 auto; }
         #media-tiles-container #media-tiles .media-tile-container .media-tile .title {
           text-align: left;
-          padding: 20px 20px 10px 20px;
-          font-size: 30px;
-          background-color: white; }
+          padding: 16px 20px 10px 20px;
+          font-size: 31px;
+          background-color: white;
+          font-weight: 100; }
         #media-tiles-container #media-tiles .media-tile-container .media-tile .description {
           text-align: left;
-          padding: 10px 20px 20px 20px;
-          background-color: white; }
+          padding: 0px 20px 23px 20px;
+          background-color: white;
+          font-size: 14px;
+          line-height: 21px;
+          font-weight: 100; }

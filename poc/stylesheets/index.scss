@@ -2,7 +2,7 @@
 
 #local-header {
   background-color: $white;
-  padding: 35px 0;
+  padding: 21px 0px 35px 0px;
 }
 
 #intro-video-container {
@@ -31,7 +31,7 @@
 }
 
 .project {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 
   .green { background-color: $green; }
   .sea_foam { background-color: $sea_foam; }
@@ -40,17 +40,19 @@
 
   .header {
     color: $white;
-    padding: 10px 40px;
-    font-size: 21px;
+    padding: 11px 56px 7px;
+    font-size: 20px;
 
     .title {
       text-transform: uppercase;
-      font-weight: bold;
+      letter-spacing: 3px;
       float: left;
     }
 
     .info {
       float: right;
+      font-size: 20px;
+      font-weight: 200;
     }
   }
 
@@ -60,11 +62,11 @@
     ul {
       list-style-type: none;
       padding: 0;
-      margin: 30px 0 27px 0;
+      margin: 31px 0 32px 43px;
 
       li {
         float: left;
-        padding: 0 18px;
+        padding: 0 12px;
         margin: 0;
       }
     }

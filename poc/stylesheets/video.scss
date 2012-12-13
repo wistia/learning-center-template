@@ -10,7 +10,7 @@
     width: 960px;
     margin: 0 auto;
     background-color: $white;
-    padding: 35px 0;
+    padding: 19px 0px 27px 0px;
 
     .light-bulb {
       float: left;
@@ -23,9 +23,11 @@
       h1 {
         width: 240px;
         font-size: 32px;
-        color: #67686a;
+        color: $dark_grey;
         margin: 0;
-        padding: 0 20px;
+        padding: 0px 20px 11px 20px;
+        font-weight: 100;
+        letter-spacing: 1px;
       }
     }
 
@@ -35,10 +37,16 @@
 
       ul {
         list-style-type: none;
+        margin: 18px 0px 0px 0px;
+        padding: 0px 0px 0px 58px;
 
         li {
           float: left;
           padding: 0 10px;
+
+          .arrow {
+            padding: 23px 0px 0px 0px;
+          }
         }
       }
     }
@@ -61,10 +69,17 @@
       float: left;
       width: 240px;
       margin: 20px 0;
+      font-size: 14px;
+      color: $dark_grey;
+      line-height: 21px;
+      font-weight: 100;
 
       .title {
         font-size: 30px;
-        padding-bottom: 10px;
+        padding-bottom: 25px;
+        padding-top: 40px;
+        font-weight: 100;
+        color: $dark_grey;
       }
     }
 

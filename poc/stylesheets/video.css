@@ -61,20 +61,19 @@ body {
 .project {
   margin-bottom: 40px; }
   .project .green {
-    background-color: #bdd977; }
+    background-color: #87d452; }
   .project .sea_foam {
-    background-color: #98d2ae; }
+    background-color: #5ad4a0; }
   .project .blue {
-    background-color: #a3dcea; }
+    background-color: #63d0db; }
   .project .purple {
-    background-color: #80afde; }
+    background-color: #5c9ed6; }
   .project .header {
     color: white;
     padding: 10px 40px;
     font-size: 21px; }
     .project .header .title {
       text-transform: uppercase;
-      font-weight: bold;
       float: left; }
     .project .header .info {
       float: right; }
@@ -108,7 +107,7 @@ body {
     width: 960px;
     margin: 0 auto;
     background-color: white;
-    padding: 35px 0; }
+    padding: 19px 0px 27px 0px; }
     #local-header-container #local-header .light-bulb {
       float: left; }
     #local-header-container #local-header .video-title {
@@ -117,17 +116,23 @@ body {
       #local-header-container #local-header .video-title h1 {
         width: 240px;
         font-size: 32px;
-        color: #67686a;
+        color: #646059;
         margin: 0;
-        padding: 0 20px; }
+        padding: 0px 20px 11px 20px;
+        font-weight: 100;
+        letter-spacing: 1px; }
     #local-header-container #local-header .video-carousel {
       float: right;
       width: 620px; }
       #local-header-container #local-header .video-carousel ul {
-        list-style-type: none; }
+        list-style-type: none;
+        margin: 18px 0px 0px 0px;
+        padding: 0px 0px 0px 58px; }
         #local-header-container #local-header .video-carousel ul li {
           float: left;
           padding: 0 10px; }
+          #local-header-container #local-header .video-carousel ul li .arrow {
+            padding: 23px 0px 0px 0px; }
 
 #video-container {
   background-color: #f4f4f4; }
@@ -139,10 +144,17 @@ body {
   #video-info-container #video-info #info {
     float: left;
     width: 240px;
-    margin: 20px 0; }
+    margin: 20px 0;
+    font-size: 14px;
+    color: #646059;
+    line-height: 21px;
+    font-weight: 100; }
     #video-info-container #video-info #info .title {
       font-size: 30px;
-      padding-bottom: 10px; }
+      padding-bottom: 25px;
+      padding-top: 40px;
+      font-weight: 100;
+      color: #646059; }
   #video-info-container #video-info #comments {
     float: right;
     width: 700px; }

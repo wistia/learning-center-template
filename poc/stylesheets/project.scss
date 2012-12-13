@@ -10,7 +10,7 @@
     width: 960px;
     margin: 0 auto;
     background-color: $white;
-    padding: 35px 0;
+    padding: 19px 0px 27px 0px;
 
     .light-bulb {
       float: left;
@@ -24,15 +24,22 @@
       h1 {
         width: 240px;
         font-size: 32px;
-        color: #67686a;
+        color: $dark_grey;
         margin: 0;
-        padding: 0 20px;
+        padding: 1px 20px;
+        font-weight: 100;
+        letter-spacing: 1px;
       }
     }
 
     .project-description {
       float: right;
       width: 620px;
+      color: $dark_grey;
+      font-weight: 100;
+      padding-top: 7px;
+      font-size: 16px;
+      line-height: 24px;
     }
   }
 }
@@ -45,13 +52,13 @@
   #media-tiles {
     width: 960px;
     text-align: left;
-    margin: 0 auto;
+    margin: -7px auto 0px auto;
 
     .media-tile-container {
-      width: 300px;
+      width: 260px;
       float: left;
       text-align: center;
-      margin: 40px 10px;
+      margin: 32px 22px 32px 22px; 
 
       .media-tile {
         background-color: #aaa;
@@ -63,15 +70,19 @@
 
         .title {
           text-align: left;
-          padding: 20px 20px 10px 20px;
-          font-size: 30px;
+          padding: 16px 20px 10px 20px;
+          font-size: 31px;
           background-color: $white;
+          font-weight: 100;
         }
 
         .description {
           text-align: left;
-          padding: 10px 20px 20px 20px;
+          padding: 0px 20px 23px 20px;
           background-color: $white;
+          font-size: 14px;
+          line-height: 21px;
+          font-weight: 100;
         }
       }
     }
