@@ -1,0 +1,62 @@
+!!!
+%html
+  %head
+    %title Wistia Learning Center
+    %link{ :rel => 'stylesheet', :href => 'stylesheets/index.css' }
+
+  %body
+    #global-header-container.cf
+      #global-header.cf
+        .logo
+          %a{ :href => 'http://www.wistia.com' }
+        .links
+          %a{ :href => '#' } Learning
+          %a{ :href => '#' } Pricing
+          %a{ :href => '#' } Blog
+          %a{ :href => '#' } Login
+
+    #local-header
+      %img{ :src => 'images/logo.png' }
+
+    #intro-video-container
+      #intro-video
+        %img{ :src => 'images/placeholder.png' }
+
+    #main-container
+      #main
+        #project-list
+          .project.cf
+            .header.green.cf
+              .title
+                Video Production
+              .info
+                4 videos / 7 minutes
+            .videos.cf
+              %ul.cf
+                - 7.times do
+                  %li
+                    %img{ :src => 'images/empty_thumbnail_green.png' }
+
+          .project.cf
+            .header.sea_foam.cf
+              .title
+                Video Production
+              .info
+                4 videos / 7 minutes
+            .videos.cf
+              %ul.cf
+                - 7.times do
+                  %li
+                    %img{ :src => 'images/empty_thumbnail_sea_foam.png' }
+
+          .project.cf
+            .header.blue.cf
+              .title
+                Video Production
+              .info
+                4 videos / 7 minutes
+            .videos.cf
+              %ul.cf
+                - 7.times do
+                  %li
+                    %img{ :src => 'images/empty_thumbnail_blue.png' }

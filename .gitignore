@@ -1,6 +1,5 @@
 *.swp
 **/.tmp*
-.rvmrc
 .bundle
 config/bakery.yml
 config/distillery.yml
