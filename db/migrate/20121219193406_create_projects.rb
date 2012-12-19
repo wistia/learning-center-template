@@ -7,6 +7,6 @@ class CreateProjects < ActiveRecord::Migration
   end
 
   def down
-    remove_table(:projects)
+    drop_table(:projects)
   end
 end
