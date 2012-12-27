@@ -8,38 +8,17 @@
 #main-container
   #main
     #project-list
-      .project.cf
-        .header.green.cf
-          .title
-            Video Production
-          .info
-            4 videos / 7 minutes
-        .videos.cf
-          %ul.cf
-            - 7.times do
-              %li
-                %img{ :src => 'images/empty_thumbnail_green.png' }
+      - @projects.each do |p| 
+        .project.cf
+          .header.green.cf
+            .title
+              = p.name
+            .info
+              = "#{p.media.count} videos / #{p.total_media_duration} minutes"
+          .videos.cf
+            %ul.cf
+              - 7.times do
+                %li
+                  %img{ :src => 'images/empty_thumbnail_green.png' }
 
-      .project.cf
-        .header.sea_foam.cf
-          .title
-            Video Production
-          .info
-            4 videos / 7 minutes
-        .videos.cf
-          %ul.cf
-            - 7.times do
-              %li
-                %img{ :src => 'images/empty_thumbnail_sea_foam.png' }
-
-      .project.cf
-        .header.blue.cf
-          .title
-            Video Production
-          .info
-            4 videos / 7 minutes
-        .videos.cf
-          %ul.cf
-            - 7.times do
-              %li
-                %img{ :src => 'images/empty_thumbnail_blue.png' }
+      

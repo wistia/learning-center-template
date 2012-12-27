@@ -11,17 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121219195156) do
+ActiveRecord::Schema.define(:version => 20121227162904) do
 
   create_table "medias", :force => true do |t|
     t.string   "hashed_id"
     t.string   "name"
-    t.string   "duration"
+    t.float    "duration"
     t.text     "description"
     t.string   "thumbnail"
     t.datetime "created"
     t.text     "embed_code"
-    t.integer  "media_id"
+    t.integer  "project_id"
   end
 
   create_table "projects", :force => true do |t|
