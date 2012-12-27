@@ -1,7 +1,8 @@
 #local-header-container
   #local-header.cf
     .light-bulb
-      %img{ :src => '/images/lightbulb.png' }
+      %a{ :href => root_url }
+        %img{ :src => '/images/lightbulb.png' }
     .project-title
       %h1= @project.name
     .project-description
