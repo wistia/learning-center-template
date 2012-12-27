@@ -1,5 +1,6 @@
 class MediasController < ApplicationController
   def show
-     @stylesheet = "media"
+    @stylesheet = "media"
+    @media = Media.where(id: params[:id]).first
   end
 end

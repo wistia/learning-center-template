@@ -3,7 +3,7 @@
     .light-bulb
       %img{ :src => '/images/lightbulb.png' }
     .video-title
-      %h1 Video Production
+      %h1= @media.name
     .video-carousel.cf
       %ul
         %li
@@ -16,11 +16,11 @@
 
 #video-container
   #video
-    %img{ :src => '/images/placeholder.png' }
+    %iframe{ :src => "http://fast.wistia.com/embed/iframe/#{@media.hashed_id}", :width => 960, :height => 445, :style => "border: 0;" }
 
 #video-info-container
   #video-info.cf
     #info
-      .title Video Title
-      .description  A brief description of what the video is about - something punchy and short!
+      .title= @media.name
+      .description= @media.description
     #comments

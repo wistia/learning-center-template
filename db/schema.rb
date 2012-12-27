@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121227162904) do
+ActiveRecord::Schema.define(:version => 20121227195849) do
 
   create_table "medias", :force => true do |t|
     t.string   "hashed_id"
@@ -20,7 +20,6 @@ ActiveRecord::Schema.define(:version => 20121227162904) do
     t.text     "description"
     t.string   "thumbnail"
     t.datetime "created"
-    t.text     "embed_code"
     t.integer  "project_id"
   end
 
