@@ -1,0 +1,21 @@
+- Color ID in project database to refresh with data
+- Front page carousels
+- Media page carousels
+- Hover states for project page
+  - Time
+  - Comment count
+  - Tinting
+  - Play button hover
+- "New" tags on project page, colored by project
+- Lightbulb hover states by project
+  - Project page
+  - Media page
+- Disqus API
+  - Comments on media page
+  - Comment count on project page
+- Social sharing buttons on media page
+- Special color for player on media page (playerColor)
+- Gating
+- Splitting media short desc. and media long desc. by ||
+- Processing media desc. with markdown
+- Fix style (line height) of media title (second instance)
