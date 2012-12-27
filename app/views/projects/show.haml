@@ -3,16 +3,14 @@
     .light-bulb
       %img{ :src => '/images/lightbulb.png' }
     .project-title
-      %h1 Video Production
+      %h1= @project.name
     .project-description
-      Description of this project and what it's about, as well as permalinks to a related blog post and, if it exists, a link to download whatever other materials we've produced for this topic that doesn't fit into a video, proper.
-
+      = @project.description
 #media-tiles-container
   #media-tiles.cf
-    - 5.times do
+    - @project.media.each do |m|
       .media-tile-container
         .media-tile
-          %img{ :src => '/images/large_play_button.png' }
-          .title Media title
-          .description A brief description of what the video is about - something punchy and short!
-          
+          %img{ :src => "#{m.medium_thumbnail}" }
+          .title= m.name
+          .description= m.description
