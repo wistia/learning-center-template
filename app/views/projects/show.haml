@@ -11,6 +11,7 @@
     - @project.media.each do |m|
       .media-tile-container
         .media-tile
-          %img{ :src => "#{m.medium_thumbnail}" }
+          %a{ :href => media_path(m) }
+            %img{ :src => "#{m.medium_thumbnail}" }
           .title= m.name
           .description= m.description

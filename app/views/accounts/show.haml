@@ -27,11 +27,11 @@
                   var media = project_#{p.id}_medias[i];
                   if (media) {
                     // Add project thumbnail
-                    var content = "<li><img src='" + media["thumbnail"] + "' /></li>";
-                    $("#project_#{p.id} .videos ul").append(content);
+                    var content = '<li><a href="/medias/' + media["id"] + '"><img src="' + media['thumbnail'] + '" /></a></li>';
+                    $('#project_#{p.id} .videos ul').append(content);
                   } else {
                     // Add default thumbnail
-                    var content = "<li><img src='images/empty_thumbnail_#{project_color}.png' /></li>";
-                    $("#project_#{p.id} .videos ul").append(content);
+                    var content = '<li><img src="images/empty_thumbnail_#{project_color}.png" /></li>';
+                    $('#project_#{p.id} .videos ul').append(content);
                   }
                 }
