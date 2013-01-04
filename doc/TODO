@@ -1,4 +1,4 @@
-- Color ID in project database to refresh with data
+x Color ID in project database to refresh with data
 - Front page carousels
 - Media page carousels
 - Hover states for project page
@@ -20,4 +20,6 @@
 - Processing media desc. with markdown
 - Fix style (line height) of media title (second instance)
 - Data importer
+  - Copy in data
+  - Calculate color
 - Real embed for front page video
