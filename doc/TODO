@@ -11,7 +11,7 @@ x Color ID in project database to refresh with data
   - Project page
   - Media page
 - Disqus API
-  - Comments on media page
+  x Comments on media page
   - Comment count on project page
 - Social sharing buttons on media page
 - Special color for player on media page (playerColor)

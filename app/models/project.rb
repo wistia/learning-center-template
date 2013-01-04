@@ -1,6 +1,6 @@
 class Project < ActiveRecord::Base
   has_many :media, :class_name => "Media"
-  attr_accessible :name, :description
+  attr_accessible :name, :description, :color
   
   def total_media_duration
     total = media.sum(:duration) / 60
