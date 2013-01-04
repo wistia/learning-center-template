@@ -8,13 +8,9 @@
 #main-container
   #main
     #project-list
-      - project_colors = ["green", "sea_foam", "blue", "purple"]
-      - project_index = 0
       - @projects.each do |p|
-        - project_color = project_colors[project_index % 4]
-        - project_index += 1
         %div{ :class => ["project", "cf"], :id => "project_#{p.id}"}
-          %div{ :class => ["header", project_color, "cf"] }
+          %div{ :class => ["header", p.color, "cf"] }
             .title
               %a{ :href => project_path(p) }= p.name
             .info
@@ -26,12 +22,12 @@
                 for(var i = 0; i < 7; i++) {
                   var media = project_#{p.id}_medias[i];
                   if (media) {
-                    // Add project thumbnail
+                    // Add media thumbnail
                     var content = '<li><a href="/medias/' + media["id"] + '"><img src="' + media['thumbnail'] + '" /></a></li>';
                     $('#project_#{p.id} .videos ul').append(content);
                   } else {
                     // Add default thumbnail
-                    var content = '<li><img src="images/empty_thumbnail_#{project_color}.png" /></li>';
+                    var content = '<li><img src="images/empty_thumbnail_#{p.color}.png" /></li>';
                     $('#project_#{p.id} .videos ul').append(content);
                   }
                 }
