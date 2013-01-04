@@ -14,7 +14,12 @@ namespace :learning_center do
       project_color = project_colors[project_index % 4]
       project_index += 1
 
-      new_project = Project.create(name: p.name, description: p.description, color: project_color)
+      new_project = Project.create(
+        name: p.name,
+        description: p.description,
+        color: project_color,
+        hashed_id: p.hashedId
+      )
 
       Wistia::Media.find(:all, :params => { :project_id => p.id }).each do |m|
         Media.create(

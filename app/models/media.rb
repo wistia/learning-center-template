@@ -10,4 +10,8 @@ class Media < ActiveRecord::Base
     uri.query = "image_crop_resized=260x146"
     uri.to_s
   end
+
+  def to_param
+    hashed_id
+  end
 end

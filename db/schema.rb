@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130104212351) do
+ActiveRecord::Schema.define(:version => 20130104214700) do
 
   create_table "medias", :force => true do |t|
     t.string   "hashed_id"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(:version => 20130104212351) do
     t.string "name"
     t.text   "description"
     t.string "color"
+    t.string "hashed_id"
   end
 
 end

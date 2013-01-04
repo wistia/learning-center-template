@@ -23,7 +23,7 @@
                   var media = project_#{p.id}_medias[i];
                   if (media) {
                     // Add media thumbnail
-                    var content = '<li><a href="/medias/' + media["id"] + '"><img src="' + media['thumbnail'] + '" /></a></li>';
+                    var content = '<li><a href="/medias/' + media["hashed_id"] + '"><img src="' + media['thumbnail'] + '" /></a></li>';
                     $('#project_#{p.id} .videos ul').append(content);
                   } else {
                     // Add default thumbnail

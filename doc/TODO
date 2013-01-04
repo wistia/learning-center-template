@@ -19,7 +19,8 @@ x Color ID in project database to refresh with data
 - Splitting media short desc. and media long desc. by ||
 - Processing media desc. with markdown
 - Fix style (line height) of media title (second instance)
-- Data importer
-  - Copy in data
-  - Calculate color
+x Data importer
+  x Copy in data
+  x Calculate color
 - Real embed for front page video
+x Make sure URLs are static - hashed IDs instead of numeric
