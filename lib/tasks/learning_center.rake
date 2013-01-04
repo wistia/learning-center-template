@@ -24,7 +24,8 @@ namespace :learning_center do
           description: m.description,
           thumbnail: m.thumbnail.url,
           created: m.created,
-          project_id: new_project.id
+          project_id: new_project.id,
+          aspect_ratio: m.assets.last.height.to_f / m.assets.last.width.to_f
         )
       end
     end

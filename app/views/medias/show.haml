@@ -17,7 +17,7 @@
 
 #video-container
   #video
-    %iframe{ :src => "http://fast.wistia.com/embed/iframe/#{@media.hashed_id}", :width => 960, :height => 445, :style => "border: 0;" }
+    %iframe{ :src => "http://fast.wistia.com/embed/iframe/#{@media.hashed_id}", :width => 960, :height => 960 * @media.aspect_ratio, :style => "border: 0;" }
 
 #video-info-container
   #video-info.cf
@@ -28,6 +28,7 @@
     :javascript
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
       var disqus_shortname = 'wistialearning'; // required: replace example with your forum shortname
+      var disqus_identifier = '#{@media.hashed_id}';
 
       /* * * DON'T EDIT BELOW THIS LINE * * */
       (function() {
