@@ -1,4 +1,5 @@
-x Color ID in project database to refresh with data
+TO DO
+
 - Front page carousels
 - Media page carousels
 - Hover states for project page
@@ -11,24 +12,28 @@ x Color ID in project database to refresh with data
   - Project page
   - Media page
 - Disqus API
-  x Comments on media page
   - Comment count on project page
 - Social sharing buttons on media page
 - Special color for player on media page (playerColor)
 - Gating
 - Fix style (line height) of media title (second instance)
-x Data importer
-  x Copy in data
-  x Calculate color
 - Real embed for front page video
-x Make sure URLs are static - hashed IDs instead of numeric
-- use friendly ids
-- urls look like /learning/projects/video-production
-                 /learning/video-production
+- Use friendly ids / urls look like /learning/projects/video-production
 - New way of splitting up media description fields
-- Positions for projects
 - Positions for medias
 - Get a config.local.rb and config.rb
 - Open source this shit
   - Remove secret token and put secret token in config.local.rb
   - Put wistia api password and disqus api key in config.local.rb
+
+******
+
+DONE
+
+x Color ID in project database to refresh with data
+x Comments on media page
+x Data importer
+  x Copy in data
+  x Calculate color
+x Make sure URLs are static - hashed IDs instead of numeric
+x Positions for projects

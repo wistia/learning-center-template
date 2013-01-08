@@ -6,7 +6,7 @@
     .project-title
       %h1= @project.name
     .project-description
-      = @project.description
+      = @project.description.html_safe
 #media-tiles-container
   #media-tiles.cf
     - @project.media.each do |m|
@@ -15,4 +15,4 @@
           %a{ :href => media_path(m) }
             %img{ :src => "#{m.medium_thumbnail}" }
           .title= m.name
-          .description= m.description
+          .description= m.short_description.html_safe

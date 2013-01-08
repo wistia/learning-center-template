@@ -33,12 +33,22 @@ namespace :learning_center do
 
       Wistia::Media.find(:all, :params => { :project_id => p.id }).each do |m|
         media_index += 1
+        descriptions = m.description.split(/<p>\s*---\s*<\/p>/)
+
+        if descriptions.length == 2
+          short_description = descriptions.first
+          long_description = descriptions.last
+        else
+          short_description = m.description
+          long_description = m.description
+        end
 
         Media.create(
           hashed_id: m.hashed_id,
           name: m.name,
           duration: m.duration,
-          description: m.description,
+          long_description: long_description,
+          short_description: short_description,
           thumbnail: m.thumbnail.url,
           created: m.created,
           project_id: new_project.id,
