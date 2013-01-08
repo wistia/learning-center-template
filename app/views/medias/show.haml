@@ -16,7 +16,7 @@
 
 #video-container
   #video
-    %iframe{ :src => "http://fast.wistia.com/embed/iframe/#{@media.hashed_id}", :width => 960, :height => 960 * @media.aspect_ratio, :style => "border: 0;" }
+    %iframe{ :src => "http://fast.wistia.com/embed/iframe/#{@media.hashed_id}?playerColor=#{@media.project.hex_color}", :width => 960, :height => 960 * @media.aspect_ratio, :style => "border: 0;" }
 
 #video-info-container
   #video-info.cf

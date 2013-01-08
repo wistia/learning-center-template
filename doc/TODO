@@ -8,13 +8,9 @@ TO DO
   - Tinting
   - Play button hover
 - "New" tags on project page, colored by project
-- Lightbulb hover states by project
-  - Project page
-  - Media page
 - Disqus API
   - Comment count on project page
 - Social sharing buttons on media page
-- Special color for player on media page (playerColor)
 - Gating
 - Fix style (line height) of media title (second instance)
 - Real embed for front page video
@@ -37,3 +33,7 @@ x Data importer
 x Make sure URLs are static - hashed IDs instead of numeric
 x Positions for projects
 x New way of splitting up media description fields
+x Lightbulb hover states by project
+  x Project page
+  x Media page
+x Special color for player on media page (playerColor)
