@@ -18,10 +18,15 @@ namespace :learning_center do
         name: p.name,
         description: p.description,
         color: project_color,
-        hashed_id: p.hashedId
+        hashed_id: p.hashedId,
+        position: project_index
       )
 
+      media_index = 0
+
       Wistia::Media.find(:all, :params => { :project_id => p.id }).each do |m|
+        media_index += 1
+
         Media.create(
           hashed_id: m.hashed_id,
           name: m.name,
@@ -30,7 +35,8 @@ namespace :learning_center do
           thumbnail: m.thumbnail.url,
           created: m.created,
           project_id: new_project.id,
-          aspect_ratio: m.assets.last.height.to_f / m.assets.last.width.to_f
+          aspect_ratio: m.assets.last.height.to_f / m.assets.last.width.to_f,
+          position: media_index
         )
       end
     end

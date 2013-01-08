@@ -2,7 +2,18 @@ require 'uri'
 
 class Media < ActiveRecord::Base
   belongs_to :project
-  attr_accessible :hashed_id, :name, :duration, :description, :thumbnail, :created, :embed_code, :project_id, :aspect_ratio
+
+  attr_accessible :hashed_id, 
+    :name,
+    :duration,
+    :description,
+    :thumbnail,
+    :created,
+    :embed_code,
+    :project_id,
+    :aspect_ratio,
+    :position
+
   self.table_name = "medias"
   
   def medium_thumbnail
