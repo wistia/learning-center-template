@@ -16,11 +16,18 @@ x Color ID in project database to refresh with data
 - Social sharing buttons on media page
 - Special color for player on media page (playerColor)
 - Gating
-- Splitting media short desc. and media long desc. by ||
-- Processing media desc. with markdown
 - Fix style (line height) of media title (second instance)
 x Data importer
   x Copy in data
   x Calculate color
 - Real embed for front page video
 x Make sure URLs are static - hashed IDs instead of numeric
+- use friendly ids
+- urls look like /learning/projects/video-production
+                 /learning/video-production
+- New way of splitting up media description fields
+- Add position columns
+- Get a config.local.rb and config.rb
+- Open source this shit
+  - Remove secret token and put secret token in config.local.rb
+  - Put wistia api password and disqus api key in config.local.rb
