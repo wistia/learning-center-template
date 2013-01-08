@@ -14,6 +14,16 @@
 
     .light-bulb {
       float: left;
+
+      a {
+        display: inline-block;
+        height: 78px;
+        width: 58px;
+      }
+
+      a:hover {
+        background-position: 0 -78px;
+      }
     }
 
     .video-title {
