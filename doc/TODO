@@ -26,7 +26,8 @@ x Make sure URLs are static - hashed IDs instead of numeric
 - urls look like /learning/projects/video-production
                  /learning/video-production
 - New way of splitting up media description fields
-- Add position columns
+- Positions for projects
+- Positions for medias
 - Get a config.local.rb and config.rb
 - Open source this shit
   - Remove secret token and put secret token in config.local.rb

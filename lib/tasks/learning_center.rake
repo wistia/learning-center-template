@@ -10,12 +10,19 @@ namespace :learning_center do
     project_colors = ["green", "sea_foam", "blue", "purple"]
     project_index = 0
 
-    Wistia::Project.all.each do |p|
+    wistia_projects = Wistia::Project.find(:all, :params => { :sort_by => "name" })
+    
+    wistia_projects.each do |p|
       project_color = project_colors[project_index % 4]
       project_index += 1
 
+      new_project_name = p.name
+      if new_project_name =~ /^\d+\s/
+        new_project_name.gsub!(/^\d+\s/, "")
+      end
+
       new_project = Project.create(
-        name: p.name,
+        name: new_project_name,
         description: p.description,
         color: project_color,
         hashed_id: p.hashedId,
