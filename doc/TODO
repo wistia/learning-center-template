@@ -8,11 +8,8 @@ TO DO
   - Tinting
   - Play button hover
 - "New" tags on project page, colored by project
-- Disqus API
-  - Comment count on project page
 - Social sharing buttons on media page
 - Gating
-- Fix style (line height) of media title (second instance)
 - Real embed for front page video
 - Use friendly ids / urls look like /learning/projects/video-production
 - Get a config.local.rb and config.rb
@@ -38,3 +35,4 @@ x Lightbulb hover states by project
   x Media page
 x Special color for player on media page (playerColor)
 x Use versions while updating
+x Fix style (line height) of media title (second instance)
