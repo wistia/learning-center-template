@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130108204149) do
+ActiveRecord::Schema.define(:version => 20130110202757) do
 
   create_table "medias", :force => true do |t|
     t.string   "hashed_id"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(:version => 20130108204149) do
     t.float    "aspect_ratio"
     t.integer  "position"
     t.text     "long_description"
+    t.boolean  "is_current"
   end
 
   create_table "projects", :force => true do |t|
@@ -32,6 +33,7 @@ ActiveRecord::Schema.define(:version => 20130108204149) do
     t.string  "color"
     t.string  "hashed_id"
     t.integer "position"
+    t.boolean "is_current"
   end
 
 end

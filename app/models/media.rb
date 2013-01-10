@@ -3,6 +3,11 @@ require 'uri'
 class Media < ActiveRecord::Base
   belongs_to :project
 
+  self.table_name = "medias"
+
+  default_scope where(:is_current => true)
+
+
   attr_accessible :hashed_id, 
     :name,
     :duration,
@@ -13,9 +18,9 @@ class Media < ActiveRecord::Base
     :embed_code,
     :project_id,
     :aspect_ratio,
-    :position
+    :position,
+    :is_current
 
-  self.table_name = "medias"
   
   def medium_thumbnail
     uri = URI(thumbnail)
@@ -23,7 +28,10 @@ class Media < ActiveRecord::Base
     uri.to_s
   end
 
+
   def to_param
     hashed_id
   end
+
+
 end

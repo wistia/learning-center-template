@@ -15,7 +15,6 @@ TO DO
 - Fix style (line height) of media title (second instance)
 - Real embed for front page video
 - Use friendly ids / urls look like /learning/projects/video-production
-- Positions for medias
 - Get a config.local.rb and config.rb
 - Open source this shit
   - Remove secret token and put secret token in config.local.rb
@@ -32,8 +31,10 @@ x Data importer
   x Calculate color
 x Make sure URLs are static - hashed IDs instead of numeric
 x Positions for projects
+x Positions for medias
 x New way of splitting up media description fields
 x Lightbulb hover states by project
   x Project page
   x Media page
 x Special color for player on media page (playerColor)
+x Use versions while updating

@@ -2,11 +2,8 @@ namespace :learning_center do
   desc "Sync data with the Wistia app"
   task :sync => :environment do
     require "wistia"
-    Wistia.password = ENV["WISTIA_API_KEY"]
-    
-    Project.delete_all
-    Media.delete_all
-    
+    Wistia.password = ENV["WISTIA_API_KEY"]   
+
     project_colors = ["green", "sea_foam", "blue", "purple"]
     project_index = 0
 
@@ -26,12 +23,13 @@ namespace :learning_center do
         description: p.description,
         color: project_color,
         hashed_id: p.hashedId,
-        position: project_index
+        position: project_index,
+        is_current: false
       )
 
       media_index = 0
 
-      Wistia::Media.find(:all, :params => { :project_id => p.id }).each do |m|
+      Wistia::Media.find(:all, :params => { :project_id => p.id, :sort_by => "position" }).each do |m|
         media_index += 1
         descriptions = m.description.split(/<p>\s*---\s*<\/p>/)
 
@@ -53,9 +51,17 @@ namespace :learning_center do
           created: m.created,
           project_id: new_project.id,
           aspect_ratio: m.assets.last.height.to_f / m.assets.last.width.to_f,
-          position: media_index
+          position: media_index,
+          is_current: false
         )
       end
     end
+
+    Project.delete_all(["is_current = ?", true])
+    Media.delete_all(["is_current = ?", true])
+
+    Project.unscoped { Project.update_all(["is_current = ?", true]) }
+    Media.unscoped { Media.update_all(["is_current = ?", true]) }
+
   end
 end
