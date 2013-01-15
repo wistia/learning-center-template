@@ -81,19 +81,26 @@
 
         .title {
           text-align: left;
-          padding: 16px 20px 10px 20px;
+          padding: 16px 28px 10px 28px;
           font-size: 31px;
           background-color: $white;
           font-weight: 100;
+
+          a {
+           color: #6a6a6a;
+           text-decoration: none;
+          }
         }
 
         .description {
+          height: 70px;
           text-align: left;
-          padding: 0px 20px 23px 20px;
+          padding: 0px 28px 23px 28px;
           background-color: $white;
           font-size: 14px;
           line-height: 21px;
           font-weight: 100;
+          overflow: hidden;
 
           p {
             margin: 0;
@@ -101,8 +108,41 @@
         }
         
         .info {
+          display: none;
+          height: 70px;
+          text-align: left;
+          padding: 0px 28px 23px 28px;
+          background-color: $white;
+          font-size: 14px;
+          line-height: 21px;
+          font-weight: 100;
+          overflow: hidden;
+          
+          .info-title {
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 1.5px;
+            padding: 10px 0px;
+          }
 
-      
+          .info-val {
+            font-size: 36px;
+            font-weight: 500;
+            letter-spacing: 3px;
+
+            a {
+              text-decoration: none;
+            }
+          } 
+
+
+          .time {
+            float: left;
+          }
+
+          .comments {
+            float: right;
+          }
         }
       }
     }

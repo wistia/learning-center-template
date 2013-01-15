@@ -1,4 +1,5 @@
 require 'uri'
+require 'chronic_duration'
 
 class Media < ActiveRecord::Base
   belongs_to :project
@@ -26,6 +27,11 @@ class Media < ActiveRecord::Base
     uri = URI(thumbnail)
     uri.query = "image_crop_resized=260x146"
     uri.to_s
+  end
+
+  
+  def duration_for_display
+    ChronicDuration.output(duration.to_i, :format => :chrono)
   end
 
 

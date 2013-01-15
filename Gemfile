@@ -10,6 +10,7 @@ gem 'mysql2', '0.3.11'
 gem 'sass', '3.2.3'
 gem 'wistia-api', '0.2.1'
 gem 'friendly_id', '4.0.9'
+gem 'chronic_duration', '0.9.6'
 
 # Gems used only for assets and not required
 # in production environments by default.
