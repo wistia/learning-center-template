@@ -1,6 +1,6 @@
 class MisterConfig
 
-  def initialize(opts)
+  def initialize(opts = {})
     @opts = opts
   end
 
@@ -23,7 +23,7 @@ $config = MisterConfig.new(
 
 # try to load the local config, where we override some of the values
 begin
-  require_relative './_config.local'
+  require_relative './config.local'
 rescue LoadError
   # no problem sir, it's ok sir
 end
