@@ -1,5 +1,3 @@
-require 'redis'
-
 # unicorn_rails -c /opt/apps/wistia/current/config/unicorn.rb -E production -D
 # NOTE: This config is only really for production, we don't use this locally
  
