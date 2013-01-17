@@ -5,6 +5,7 @@
     = stylesheet_link_tag @stylesheet, :media => "all"
     = csrf_meta_tags
     = javascript_include_tag "jquery-1.8.3.min.js"
+    = yield :html_head
 
   %body
     #global-header-container.cf
