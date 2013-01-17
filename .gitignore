@@ -4,7 +4,7 @@
 config/bakery.yml
 config/distillery.yml
 config/database.yml
-config/config.local.yml
+config/config.local.*
 log/
 public/javascripts/cache
 public/stylesheets/cache
