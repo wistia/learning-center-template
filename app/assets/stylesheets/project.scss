@@ -100,6 +100,7 @@
   .media-tile:hover {
     .thumbnail_color_#{$color}:before {
       background: rgba(hex-color($color), 0.5);
+      content: url("/images/large_play_button.png")
     }
   }
 }
@@ -118,7 +119,7 @@
       width: 260px;
       float: left;
       text-align: center;
-      margin: 32px 22px 32px 22px; 
+      margin: 32px 22px 32px 22px;
 
       .media-tile {
         background-color: #aaa;
