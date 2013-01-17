@@ -2,7 +2,7 @@ TO DO
 
 - Front page carousels
 - Media page carousels
-- Tinting and play button hover on project page
+- Play button hover on project page
 - Social sharing buttons on media page
 - Gating
 - Real embed for front page video
@@ -40,3 +40,4 @@ x Fix style (line height) of media title (second instance)
 x Hover states for project page
   x Time
   x Comment count
+x Tinting on project page
