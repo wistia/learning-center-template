@@ -14,10 +14,10 @@ preload_app true
 timeout 60
 
 # pid me
-pid rails_env == 'production' ? "/opt/apps/learning_center/current/tmp/pids/unicorn.pid" : "/tmp/unicorn.pid"
+pid rails_env == 'production' ? "/opt/apps/learning-center/current/tmp/pids/unicorn.pid" : "/tmp/unicorn.pid"
  
 # Listen on a Unix data socket
-listen rails_env == 'production' ? "/opt/apps/learning_center/current/tmp/sockets/unicorn.sock" : "/tmp/unicorn.sock", :backlog => 1024
+listen rails_env == 'production' ? "/opt/apps/learning-center/current/tmp/sockets/unicorn.sock" : "/tmp/unicorn.sock", :backlog => 1024
  
 ##
 # REE
