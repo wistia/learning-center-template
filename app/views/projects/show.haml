@@ -12,7 +12,8 @@
       .media-tile-container
         .media-tile
           %a{ :href => media_path(m) }
-            %img{ :src => "#{m.medium_thumbnail}" }
+            %div{ :class => "thumbnail_color_#{@project.color}" }
+              %img{ :src => "#{m.medium_thumbnail}" }
           .title
             %a{ :href => media_path(m) }= m.name
           .description= m.short_description.html_safe
