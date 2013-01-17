@@ -29,7 +29,17 @@ class Media < ActiveRecord::Base
     uri.to_s
   end
 
+
+  def index_in_project
+    index = 0
+    project.media.each do |m|
+      return index if m == self
+      index += 1
+    end
+    index
+  end
   
+
   def duration_for_display
     ChronicDuration.output(duration.to_i, :format => :chrono)
   end

@@ -21,7 +21,8 @@
 :javascript
   $(document).ready(function () {
     $("#media_carousel").jcarousel({
-      visible: 4
+      visible: 4,
+      start: #{@media.index_in_project + 1}
     });
   });
 
