@@ -14,9 +14,10 @@
         %li
           %img.arrow{ :src => '/images/right_arrow.png' }
 
-#video-container
-  #video{ :style => "height: #{960 * @media.aspect_ratio}px" }
-    %iframe{ :src => "http://fast.wistia.com/embed/iframe/#{@media.hashed_id}?playerColor=#{@media.project.hex_color}", :width => 960, :height => 960 * @media.aspect_ratio, :style => "border: 0;" }
+- video_height = (960 * @media.aspect_ratio).to_i
+#video-container{ :style => "height: #{video_height}px; overflow-y: visible;" }
+  #video{ :style => "height: #{video_height}px; overflow-y: visible;" }
+    %iframe{ :src => "http://fast.wistia.com/embed/iframe/#{@media.hashed_id}?playerColor=#{@media.project.hex_color}&plugin[socialbar-v1][buttons]=email-twitter-facebook", :width => 960, :height => video_height + 26, :style => "border: 0;" }
 
 #video-info-container
   #video-info.cf

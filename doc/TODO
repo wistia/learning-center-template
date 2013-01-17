@@ -3,7 +3,6 @@ TO DO
 - Front page carousels
 - Media page carousels
 - Front page media hovers
-- Social sharing buttons on media page
 - Gating
 - Real embed for front page video
 - Use friendly ids / urls look like /learning/projects/video-production
@@ -43,4 +42,4 @@ x Hover states for project page
 x Tinting on project page
 x Play button hover on project page
 x Tinting for entire project page tile (not just image)
-
+x Social sharing buttons on media page
