@@ -54,6 +54,11 @@
   }
 }
 
+%thumbnail_color {
+  position: relative;  
+  cursor: pointer;  
+}
+
 %thumbnail_link_before {  
   content: "";  
   display: block;  
@@ -87,14 +92,15 @@
 
 @each $color in $colors {
   .thumbnail_color_#{$color} {
-    position: relative;  
-    cursor: pointer;  
+    @extend %thumbnail_color;
   }
   .thumbnail_color_#{$color}:before {
     @extend %thumbnail_link_before;
   }
-  .thumbnail_color_#{$color}:hover:before {
-    background: rgba(hex-color($color), 0.5);
+  .media-tile:hover {
+    .thumbnail_color_#{$color}:before {
+      background: rgba(hex-color($color), 0.5);
+    }
   }
 }
 
