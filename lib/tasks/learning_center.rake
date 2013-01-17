@@ -2,7 +2,7 @@ namespace :learning_center do
   desc "Sync data with the Wistia app"
   task :sync => :environment do
     require "wistia"
-    Wistia.password = ENV["WISTIA_API_KEY"]   
+    Wistia.password = ::AppConfig.wistia_api_key || ENV["WISTIA_API_KEY"] 
 
     project_colors = ["green", "sea_foam", "blue", "purple"]
     project_index = 0
