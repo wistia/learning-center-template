@@ -13,9 +13,10 @@
 
     .video-carousel.cf
       %ul#media_carousel.jcarousel-skin-tango 
-        - 7.times do
+        - @media.project.media.each do |m|
           %li
-            %img{ :src => '/images/empty_thumbnail_green.png' }
+            %a{ :href => media_path(m) }
+              %img{ :src => m.thumbnail }
 
 :javascript
   $(document).ready(function () {
