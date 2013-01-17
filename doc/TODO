@@ -7,7 +7,6 @@ TO DO
 - Gating
 - Real embed for front page video
 - Use friendly ids / urls look like /learning/projects/video-production
-- Get a config.local.rb and config.rb
 
 ******
 
@@ -17,6 +16,7 @@ NON CRITICAL
 - Open source this shit
   - Remove secret token and put secret token in config.local.rb
   - Put wistia api password and disqus api key in config.local.rb
+- Get a config.local.rb and config.rb
 
 ******
 
