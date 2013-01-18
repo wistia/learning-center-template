@@ -55,6 +55,8 @@ module LearningCenter
     # parameters by using an attr_accessible or attr_protected declaration.
     config.active_record.whitelist_attributes = true
 
+    config.assets.precompile += [ 'index.css', 'media.css', 'project.css', 'jquery-1.8.3.min.js', 'jquery.jcarousel.min.js' ]
+
     # Enable the asset pipeline
     config.assets.enabled = true
 
