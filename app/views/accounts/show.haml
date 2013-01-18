@@ -1,9 +1,16 @@
+- content_for :html_head do
+  = javascript_include_tag "jquery.jcarousel.min.js"
+  = stylesheet_link_tag "jcarousel_account.css"
+
+
 #local-header
   %img{ :src => 'images/logo.png' }
+
 
 #intro-video-container
   #intro-video
     %img{ :src => 'images/frontpage-thumbnail.jpg' }
+
 
 #main-container
   #main
@@ -16,18 +23,20 @@
             .info
               = "#{p.media.count} videos / #{p.total_media_duration} minutes"
           .videos.cf
-            %ul.cf
-              :javascript
-                var project_#{p.id}_medias = #{p.media.to_json};
-                for(var i = 0; i < 7; i++) {
-                  var media = project_#{p.id}_medias[i];
-                  if (media) {
-                    // Add media thumbnail
-                    var content = '<li><a href="/medias/' + media["hashed_id"] + '"><img src="' + media['thumbnail'] + '" /></a></li>';
-                    $('#project_#{p.id} .videos ul').append(content);
-                  } else {
-                    // Add default thumbnail
-                    var content = '<li><img src="images/empty_thumbnail_#{p.color}.png" /></li>';
-                    $('#project_#{p.id} .videos ul').append(content);
-                  }
-                }
+            %ul.media_carousel.jcarousel-skin-tango
+              - p.media.each do |m|
+                %li
+                  %a{ :href => media_path(m) }
+                    %img{ :src => m.thumbnail }
+              - extra_placeholders = [ 7 - p.media.count, 0 ].max
+              - extra_placeholders.times do
+                %li
+                  %img{ :src => "images/empty_thumbnail_#{p.color}.png" }
+
+
+:javascript
+  $(document).ready(function () {
+    $(".media_carousel").jcarousel({
+      visible: 7
+    });
+  });

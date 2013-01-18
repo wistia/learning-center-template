@@ -1,6 +1,6 @@
 - content_for :html_head do
   = javascript_include_tag "jquery.jcarousel.min.js"
-  = stylesheet_link_tag "jcarousel_skin.css"
+  = stylesheet_link_tag "jcarousel_media.css"
 
 
 #local-header-container
@@ -17,6 +17,11 @@
           %li
             %a{ :href => media_path(m) }
               %img{ :src => m.thumbnail }
+        - extra_placeholders = [ 4 - @media.project.media.count, 0 ].max
+        - extra_placeholders.times do
+          %li
+            %img{ :src => "/images/empty_thumbnail_#{@media.project.color}.png" }
+
 
 :javascript
   $(document).ready(function () {
