@@ -65,7 +65,7 @@ body {
   padding: 35px 0; }
 
 #main-container {
-  background-color: #f4f4f4;
+  background-color: #f7f6f4;
   padding: 40px 0;
   text-align: center; }
   #main-container #main {
@@ -124,14 +124,12 @@ body {
     background-color: white;
     border: 2px solid #DDD;
     color: #777;
-    height: 100px;
-    overflow: hidden;
     padding: 10px;
     position: relative;
     top: -2px; }
     .description_for_hover .description_text_box h1 {
       font-size: 18px;
-      margin: 10px 0; }
+      margin: 0 0 10px 0; }
     .description_for_hover .description_text_box p {
       font-size: 14px; }
 
@@ -150,7 +148,7 @@ body {
     margin: 0 auto; }
 
 #main-container {
-  background-color: #f4f4f4;
+  background-color: #f7f6f4;
   padding: 40px 0;
   text-align: center; }
   #main-container #main {

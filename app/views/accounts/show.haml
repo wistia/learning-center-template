@@ -50,7 +50,7 @@
       for (var j=0; j < p["media"].length; j++) {
         var m = p["media"][j];
         if (m["hashed_id"] == hashedId) {
-          return m["short_description"];
+          return [m["name"], m["short_description"]];
         }
       }
     }
@@ -59,8 +59,8 @@
 
   function appendToDescription(description) {
     var description_box = $('.description_for_hover .description_text_box');
-    if (description != description_box.html()) {
-      description_box.html("").append($(description));
+    if (description[0] != description_box.find('h1').text()) {
+      description_box.html("").append("<h1>" + description[0] + "</h1><p>" + description[1] + "</p>");
     }
   }
 
