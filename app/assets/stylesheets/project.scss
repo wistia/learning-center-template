@@ -37,7 +37,7 @@
         color: $dark_grey;
         margin: 0;
         padding: 5px 20px;
-        font-weight: 100;
+        font-weight: 700;
         letter-spacing: 1px;
       }
     }
@@ -124,6 +124,9 @@
       .media-tile {
         background-color: #aaa;
         color: #6a6a6a;
+        moz-box-shadow: 0 0 10px rgba(0,0,0,.05);
+        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+        box-shadow: 0 0 10px rgba(0, 0, 0, .05);
 
         a {
           position: relative;

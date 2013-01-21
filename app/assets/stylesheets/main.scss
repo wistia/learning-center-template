@@ -7,12 +7,37 @@ $light_grey_background: #f4f4f4;
 $dark_grey: #646059;
 $colors: "green", "sea_foam", "blue", "purple";
 
+@font-face {
+  font-family: "interstate";
+  src: url("/fonts/interstate-light/interstate-light.eot");
+  src: url("/fonts/interstate-light/interstate-light.eot?#iefix") format("embedded-opentype"), url("/fonts/interstate-light/interstate-light.woff") format("woff"), url("/fonts/interstate-light/interstate-light.ttf") format("truetype"), url("/fonts/interstate-light/interstate-light.svg#interstate-light") format("svg");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "interstate";
+  src: url("/fonts/interstate-regular/interstate-regular.eot");
+  src: url("/fonts/interstate-regular/interstate-regular.eot?#iefix") format("embedded-opentype"), url("/fonts/interstate-regular/interstate-regular.woff") format("woff"), url("/fonts/interstate-regular/interstate-regular.ttf") format("truetype"), url("/fonts/interstate-regular/interstate-regular.svg#interstate-regular") format("svg");
+  font-weight: 700; }
+
+@font-face {
+  font-family: "interstate";
+  src: url("/fonts/interstate-bold/interstate-bold.eot");
+  src: url("/fonts/interstate-bold/interstate-bold.eot?#iefix") format("embedded-opentype"), url("/fonts/interstate-bold/interstate-bold.woff") format("woff"), url("/fonts/interstate-bold/interstate-bold.ttf") format("truetype"), url("/fonts/interstate-bold/interstate-bold.svg#interstate-bold") format("svg");
+  font-weight: 900; }
+
+@font-face {
+  font-family: "interstate";
+  src: url("/fonts/interstate-light-italic/interstate-lightitalic.eot");
+  src: url("/fonts/interstate-light-italic/interstate-lightitalic.eot?#iefix") format("embedded-opentype"), url("/fonts/interstate-light-italic/interstate-lightitalic.woff") format("woff"), url("/fonts/interstate-light-italic/interstate-lightitalic.ttf") format("truetype"), url("/fonts/interstate-light-italic/interstate-lightitalic.svg#interstate-lightitalic") format("svg");
+  font-style: italic; }
+
 body {
   text-align: center;
   margin: 0;
   padding: 0;
   background-color: $white;
-  font-family: 'Open Sans', helvetica, sans-serif;
+  font-family: 'interstate', helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 #global-header-container {
@@ -65,18 +90,7 @@ body {
   padding: 35px 0;
 }
 
-#intro-video-container {
-  background-color: #e6e6e6;
-  text-align: center;
-  margin: 0;
-  padding: 0;
 
-  #intro-video {
-    width: 960px;
-    text-align: left;
-    margin: 0 auto;
-  }
-}
 
 #main-container {
   background-color: $light_grey_background;
