@@ -100,7 +100,7 @@
   .media-tile:hover {
     .thumbnail_color_#{$color}:before {
       background: rgba(hex-color($color), 0.5);
-      content: url("/images/large_play_button.png")
+      content: url("/learning/images/large_play_button.png")
     }
   }
 }

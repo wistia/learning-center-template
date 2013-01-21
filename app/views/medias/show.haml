@@ -6,7 +6,7 @@
 #local-header-container
   #local-header.cf
     .light-bulb
-      %a{ :href => "#{project_path(@media.project)}", :style => "background-image: url(/images/lightbulb_#{@media.project.color}.png);" }
+      %a{ :href => "#{project_path(@media.project)}", :style => "background-image: url(/learning/images/lightbulb_#{@media.project.color}.png);" }
     .video-title
       %h1= @media.name
 
@@ -20,7 +20,7 @@
         - extra_placeholders = [ 4 - @media.project.media.count, 0 ].max
         - extra_placeholders.times do
           %li
-            %img{ :src => "/images/empty_thumbnail_#{@media.project.color}.png" }
+            %img{ :src => "/learning/images/empty_thumbnail_#{@media.project.color}.png" }
 
 
 :javascript
