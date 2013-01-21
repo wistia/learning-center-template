@@ -115,6 +115,42 @@
     text-align: left;
     margin: -7px auto 0px auto;
 
+    .email-tile-container {
+      width: 260px;
+      float: left;
+      margin: 32px 22px 32px 22px;
+
+      .email-tile {
+        background-color: #eae5e1;
+        color: #6a6a6a;
+        height: 340px;
+        display: block;
+        margin: 0 auto;
+        padding: 25px;
+        moz-box-shadow: 0 0 10px rgba(0,0,0,.05);
+        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+        box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+
+          img {
+            padding-bottom: 30px;
+            padding-top: 30px;
+            margin: 0 auto;
+            display: block;
+          }
+          
+          .title {
+            font-size: 14pt;
+            font-weight: 800;
+            text-transform: uppercase;
+            padding-bottom: 10px;
+          }
+
+          .text {
+            font-size: 11pt;
+          }
+      }
+    }
+
     .media-tile-container {
       width: 260px;
       float: left;

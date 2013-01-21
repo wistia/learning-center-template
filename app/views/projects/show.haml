@@ -26,6 +26,12 @@
               .info-val
                 %a{ :href => "#{media_path(m)}#disqus_thread", "data-disqus-identifier" => m.hashed_id, :style => "color: ##{@project.hex_color}" }
 
+    .email-tile-container
+      .email-tile
+        %img{ :src => "/learning/images/envelope.png" }
+        .title= "Stay up to date"
+        .text= "Enter your email to stay up to date as we add more content to the Learning Center!"
+      
 :javascript
   /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
   var disqus_shortname = 'wistialearning'; // required: replace example with your forum shortname
@@ -53,4 +59,4 @@
       }
 
     );
-  });
+  }); 
