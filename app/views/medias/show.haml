@@ -23,16 +23,6 @@
           %li
             %img{ :src => "/learning/images/empty_thumbnail_#{@media.project.color}.png" }
 
-
-:javascript
-  $(document).ready(function () {
-    $("#media_carousel").jcarousel({
-      visible: 4,
-      start: #{@media.index_in_project + 1}
-    });
-  });
-
-
 - video_height = (960 * @media.aspect_ratio).to_i
 #video-container{ :style => "height: #{video_height}px; overflow-y: visible;" }
   #video{ :style => "height: #{video_height}px; overflow-y: visible;" }
@@ -62,6 +52,12 @@
 
 :javascript
   $(document).ready(function() {
+
+    $("#media_carousel").jcarousel({
+      visible: 4,
+      start: #{@media.index_in_project + 1}
+    });
+
     var light_bulb = $('.light-bulb a'),
       project_color = "#{@media.project.color}",
       project_title = $(".title-color-" + project_color);
