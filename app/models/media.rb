@@ -41,7 +41,11 @@ class Media < ActiveRecord::Base
   
 
   def duration_for_display
-    ChronicDuration.output(duration.to_i, :format => :chrono)
+    result = ChronicDuration.output(duration.to_i, :format => :chrono)
+    if result =~ /^\d+$/
+      result = "0:#{result}"
+    end
+    result
   end
 
 
