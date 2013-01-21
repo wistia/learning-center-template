@@ -74,13 +74,20 @@
   }
 
   $(document).ready(function () {
+
+    $.fn.visibilityToggle = function() {
+      return this.css('visibility', function(i, visibility) {
+        return (visibility == "visible") ? "hidden" : "visible";
+      });
+    }
+
     $(".media_carousel").jcarousel({
       visible: 7
     });
 
     $('.thumbnail').on('hover', function() {
       appendToDescription(getMediaDescription($(this)[0].dataset["mediaId"]));
-      $('.description_for_hover').toggle();
+      $('.description_for_hover').toggleClass('visible');
       positionDescription($(this));
     });
   });
