@@ -57,6 +57,15 @@
 #video-info-container {
   background-color: #fbfaf8;
 
+  a {
+    color: #8d8d8d;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: #666;
+  }
+
   #video-info {
     width: 960px;
     text-align: left;
