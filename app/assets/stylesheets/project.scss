@@ -75,21 +75,6 @@
   transition: background .3s linear;  
 }  
 
-@function hex-color($color-string) {
-  @if $color-string == "green" {
-    @return $green;
-  }
-  @if $color-string == "sea_foam" {
-    @return $sea_foam;
-  }
-  @if $color-string == "blue" {
-    @return $blue;
-  }
-  @if $color-string == "purple" {
-    @return $purple;
-  }
-}
-
 @each $color in $colors {
   .thumbnail_color_#{$color} {
     @extend %thumbnail_color;

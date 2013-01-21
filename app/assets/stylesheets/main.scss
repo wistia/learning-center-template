@@ -5,7 +5,23 @@ $purple: #5c9ed6;
 $white: #fff;
 $light_grey_background: #f7f6f4;
 $dark_grey: #646059;
+
+// function to create dynamic classes based on all the colors of the LC rainbeez
 $colors: "green", "sea_foam", "blue", "purple";
+@function hex-color($color-string) {
+  @if $color-string == "green" {
+    @return $green;
+  }
+  @if $color-string == "sea_foam" {
+    @return $sea_foam;
+  }
+  @if $color-string == "blue" {
+    @return $blue;
+  }
+  @if $color-string == "purple" {
+    @return $purple;
+  }
+}
 
 @font-face {
   font-family: "interstate";
@@ -142,6 +158,8 @@ body {
 .cf:after {
   clear: both;
 }
+
+// Work for Index Page description hovers
 
 #project-list {
   margin-bottom: 100px;

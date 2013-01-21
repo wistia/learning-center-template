@@ -11,43 +11,52 @@
     margin: 0 auto;
     background-color: $white;
     padding: 19px 0px 27px 0px;
+  }
+}
 
-    .light-bulb {
-      float: left;
+.light-bulb {
+  float: left;
 
-      a {
-        display: inline-block;
-        height: 78px;
-        width: 58px;
-      }
-
-      a:hover {
-        background-position: 0 -79px;
-      }
-    }
-
-    .video-title {
-      float: left;
-      width: 240px;
-
-      h1 {
-        width: 240px;
-        font-size: 32px;
-        color: $dark_grey;
-        margin: 0;
-        padding: 5px 20px;
-        font-weight: 700;
-        letter-spacing: 1px;
-      }
-    }
-
-    .video-carousel {
-      float: right;
-      width: 560px;
+  a {
+    display: inline-block;
+    height: 78px;
+    width: 58px;
+    &:hover, &.hovered {
+      background-position: 0 -79px;
     }
   }
 }
 
+.video-title {
+  float: left;
+  padding: 5px 20px;
+  width: 240px;
+
+  a {
+    width: 240px;
+    font-size: 32px;
+    color: $dark_grey;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+}
+
+.video-carousel {
+  float: right;
+  width: 560px;
+}
+
+@each $color in $colors {
+  .video-title {
+    .title-color-#{$color} {
+      &:hover, &.hovered {
+        color: hex-color($color);
+      }
+    }
+  }
+}
 
 #video-container {
   background-color: $light_grey_background;
@@ -60,10 +69,9 @@
   a {
     color: #8d8d8d;
     text-decoration: underline;
-  }
-
-  a:hover {
-    color: #666;
+    &:hover {
+      color: #666;
+    }
   }
 
   #video-info {

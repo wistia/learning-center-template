@@ -8,7 +8,8 @@
     .light-bulb
       %a{ :href => "#{project_path(@media.project)}", :style => "background-image: url(/learning/images/lightbulb_#{@media.project.color}.png);" }
     .video-title
-      %h1= @media.project.name
+      %a{ :href => "#{project_path(@media.project)}", :class => "title-color-#{@media.project.color}"} 
+        =@media.project.name
 
 
     .video-carousel.cf
@@ -58,3 +59,18 @@
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
       })();
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> 
+
+:javascript
+  $(document).ready(function() {
+    var light_bulb = $('.light-bulb a'),
+      project_color = "#{@media.project.color}",
+      project_title = $(".title-color-" + project_color);
+
+    light_bulb.on("hover", function() {
+      project_title.toggleClass('hovered');
+    });
+
+    project_title.on("hover", function() {
+      light_bulb.toggleClass('hovered');
+    });
+  });
