@@ -147,6 +147,28 @@
 
           .text {
             font-size: 11pt;
+            padding-bottom: 15px;
+          }
+
+          input {
+            height: 20px;
+            width: 150px;
+            font-size: 16px;
+            font-family: 'Open Sans', sans-serif;
+            border: 0;
+            padding: 15px;
+            margin: 0 auto;
+            outline: 0px;
+            color: #adaaa8;
+            font-weight: 100;
+          }
+
+          button {
+            border: 0px;
+            position: absolute;
+            width: 36px;
+            height: 48px;
+            background: url('/learning/images/emailbutton.png');
           }
       }
     }
