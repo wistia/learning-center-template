@@ -8,7 +8,7 @@
     .light-bulb
       %a{ :href => "#{project_path(@media.project)}", :style => "background-image: url(/learning/images/lightbulb_#{@media.project.color}.png);" }
     .video-title
-      %h1= @media.name
+      %h1= @media.project.name
 
 
     .video-carousel.cf
