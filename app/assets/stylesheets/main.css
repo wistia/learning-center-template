@@ -1,12 +1,3 @@
-$green: #87D452;
-$sea_foam: #5AD4A0;
-$blue: #63D0DB;
-$purple: #5c9ed6;
-$white: #fff;
-$light_grey_background: #f7f6f4;
-$dark_grey: #646059;
-$colors: "green", "sea_foam", "blue", "purple";
-
 @font-face {
   font-family: "interstate";
   src: url("/fonts/interstate-light/interstate-light.eot");
@@ -35,146 +26,91 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  background-color: $white;
+  background-color: white;
   font-family: 'interstate', helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
+  -webkit-font-smoothing: antialiased; }
 
 #global-header-container {
   margin: 0;
   padding: 0;
-  text-align: center;
-
-  #global-header {
+  text-align: center; }
+  #global-header-container #global-header {
     margin: 0 auto;
     text-align: left;
     width: 960px;
-    height: 70px;
-
-    .logo {
-      float: left;
-
-      a {
-        background: url('/learning/images/wistia_logo.png') no-repeat;
+    height: 70px; }
+    #global-header-container #global-header .logo {
+      float: left; }
+      #global-header-container #global-header .logo a {
+        background: url("/learning/images/wistia_logo.png") no-repeat;
         width: 200px;
         height: 40px;
         display: inline-block;
-        margin-top: 15px;
-      }
-
-      a:hover {
-        background-position: 0 -40px;
-      }
-    }
-
-    .links {
-      float: right;
-
-      a {
+        margin-top: 15px; }
+      #global-header-container #global-header .logo a:hover {
+        background-position: 0 -40px; }
+    #global-header-container #global-header .links {
+      float: right; }
+      #global-header-container #global-header .links a {
         color: #8d8d8d;
         text-decoration: none;
         padding: 20px 30px;
         text-transform: uppercase;
-        display: inline-block;
-      }
-
-      a:hover {
-        color: #666;
-      }
-    }
-  }
-}
+        display: inline-block; }
+      #global-header-container #global-header .links a:hover {
+        color: #666; }
 
 #local-header {
-  background-color: $white;
-  padding: 35px 0;
-}
-
-
+  background-color: white;
+  padding: 35px 0; }
 
 #main-container {
-  background-color: $light_grey_background;
+  background-color: #f4f4f4;
   padding: 40px 0;
-  text-align: center;
-
-  #main {
+  text-align: center; }
+  #main-container #main {
     width: 960px;
     text-align: left;
-    margin: 0 auto;
-  }
-}
+    margin: 0 auto; }
 
 .project {
-  margin-bottom: 40px;
-
-  .green { background-color: $green; }
-  .sea_foam { background-color: $sea_foam; }
-  .blue { background-color: $blue; }
-  .purple { background-color: $purple }
-
-  .header {
-    color: $white;
+  margin-bottom: 40px; }
+  .project .green {
+    background-color: #87d452; }
+  .project .sea_foam {
+    background-color: #5ad4a0; }
+  .project .blue {
+    background-color: #63d0db; }
+  .project .purple {
+    background-color: #5c9ed6; }
+  .project .header {
+    color: white;
     padding: 10px 40px;
-    font-size: 21px;
-
-    .title {
+    font-size: 21px; }
+    .project .header .title {
       text-transform: uppercase;
-      float: left;
-    }
-
-    .info {
-      float: right;
-    }
-  }
-
-  .videos {
-    background-color: $white;
-
-  }
-}
+      float: left; }
+    .project .header .info {
+      float: right; }
+  .project .videos {
+    background-color: white; }
 
 .cf:before,
 .cf:after {
-  content: " "; /* 1 */
-  display: table; /* 2 */
-}
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
 
 .cf:after {
-  clear: both;
-}
-
-#project-list {
-  margin-bottom: 100px;
-}
+  clear: both; }
 
 .description_for_hover {
+  background-color: white;
+  border: 2px solid gray;
   display: none;
-  margin-top: -5px;
+  height: 150px;
+  margin-top: 20px;
+  overflow: hidden;
   position: absolute;
-  width: 200px;
-  .tooth {
-    background: transparent url("/learning/images/toothy.png") no-repeat;
-    height: 14px;
-    width: 27px;
-    margin: 0 auto;
-    position: relative;
-    z-index: 10;
-  }
-  .description_text_box {
-    background-color: white;
-    border: 2px solid #DDD;
-    color: #777;
-    height: 100px;
-    overflow: hidden;
-    padding: 10px;
-    position: relative;
-    top: -2px;
-    h1 {
-      font-size: 18px;
-      margin: 10px 0;
-    }
-    p {
-      font-size: 14px;
-    }
-  }
-}
+  width: 200px; }

@@ -2,7 +2,6 @@
   = javascript_include_tag "jquery.jcarousel.min.js"
   = stylesheet_link_tag "jcarousel_account.css"
 
-
 #local-header
   %img{ :src => '/learning/images/logo.png' }
 
@@ -25,21 +24,63 @@
               %a{ :href => project_path(p) }= p.name
             .info
               = "#{p.media.count} videos / #{p.total_media_duration} minutes"
+
           .videos.cf
             %ul.media_carousel.jcarousel-skin-tango
               - p.media.each do |m|
                 %li
                   %a{ :href => media_path(m) }
-                    %img{ :src => m.thumbnail }
+                    %img.thumbnail{ :src => m.thumbnail, "data-media-id" => m.hashed_id }
               - extra_placeholders = [ 7 - p.media.count, 0 ].max
               - extra_placeholders.times do
                 %li
                   %img{ :src => "/learning/images/empty_thumbnail_#{p.color}.png" }
+    .description_for_hover
+      .tooth
+      .description_text_box
 
 
 :javascript
+
+  var projects = #{@projects.to_json(include: :media)};
+
+  function getMediaDescription(hashedId) {
+    for (var i=0; i < projects.length; i++) {
+      var p = projects[i];
+      for (var j=0; j < p["media"].length; j++) {
+        var m = p["media"][j];
+        if (m["hashed_id"] == hashedId) {
+          return m["short_description"];
+        }
+      }
+    }
+    return null;
+  }
+
+  function appendToDescription(description) {
+    var description_box = $('.description_for_hover .description_text_box');
+    if (description != description_box.html()) {
+      description_box.html("").append($(description));
+    }
+  }
+
+  function positionDescription(thumbnail) {
+    var offset = thumbnail.offset(),
+      padding = 25;
+    $('.description_for_hover').css({
+      "top": offset.top + thumbnail.outerHeight(),
+      "left": offset.left - thumbnail.width()/2
+    });
+  }
+
   $(document).ready(function () {
     $(".media_carousel").jcarousel({
       visible: 7
+    });
+
+    $('.thumbnail').on('hover', function() {
+      appendToDescription(getMediaDescription($(this)[0].dataset["mediaId"]));
+      $('.description_for_hover').toggle();
+      positionDescription($(this));
     });
   });
