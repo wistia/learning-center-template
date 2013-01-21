@@ -1,7 +1,11 @@
 LearningCenter::Application.routes.draw do
-  resources :projects, only: :show
-  resources :medias, only: :show
-  root :to => 'accounts#show'
+  scope '/learning' do
+    resources :projects, only: :show
+    resources :medias, only: :show
+    root :to => 'accounts#show'
+  end
+
+  root :to => redirect('/learning')
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
