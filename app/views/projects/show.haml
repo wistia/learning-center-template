@@ -28,12 +28,12 @@
 
     .email-tile-container
       .email-tile
-        %img{ :src => "/learning/images/envelope.png" }
+        %img{ :src => "/learning/images/email_#{@project.color}.png" }
         .title= "Stay up to date"
         .text= "Enter your email to stay up to date as we add more content to the Learning Center!"
         %form{ :action => "http://pages.wistia.com/l/9972/2013-01-21/bvxl2", :method => "post" }
           %input{ :type => "text", :name => "email", :value => "Email Address", :onblur => "if(this.value==''){this.value='Email Address'};", :onclick => "if(this.value=='Email Address'){this.value=''};" }
-          %button
+            %button{ :style => "background: url('/learning/images/email_submit_#{@project.color}.png');" }
       
 :javascript
   /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
