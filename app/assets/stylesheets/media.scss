@@ -41,6 +41,14 @@
     letter-spacing: 1px;
     text-decoration: none;
   }
+
+  .back_to_central a {
+    font-size: 12px;
+  }
+
+  .back_to_central a:hover {
+    text-decoration: underline;
+  }
 }
 
 .video-carousel {
