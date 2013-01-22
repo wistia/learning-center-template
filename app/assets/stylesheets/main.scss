@@ -165,7 +165,7 @@ body {
   margin-bottom: 120px;
 }
 
-.description_for_hover {
+.hover_description {
   visibility: hidden;
   opacity: 0;
   margin-top: -5px;
@@ -233,7 +233,7 @@ body {
   .thumbnail_color_#{$color}:before {
     @extend %thumbnail_link_before;
   }
-  .videos ul li a:hover {
+  .videos ul li a:hover, .jcarousel-clip ul li a:hover {
     .thumbnail_color_#{$color}:before {
       background: rgba(hex-color($color), 0.5);
       content: url("/learning/images/small_play_button.png")
@@ -247,7 +247,7 @@ body {
   }
 }
 
-.videos ul li a {
+.videos ul li a, .jcarousel-clip ul li a {
   width: 100px;
   height: 60px;
   display: block;

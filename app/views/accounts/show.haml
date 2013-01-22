@@ -36,59 +36,22 @@
               - extra_placeholders.times do
                 %li
                   %img{ :src => "/learning/images/empty_thumbnail_#{p.color}.png" }
-    .description_for_hover
-      .tooth
-      .description_text_box
-
 
 :javascript
-
   var projects = #{@projects.to_json(include: :media)};
 
-  function getMediaDescription(hashedId) {
-    for (var i=0; i < projects.length; i++) {
-      var p = projects[i];
-      for (var j=0; j < p["media"].length; j++) {
-        var m = p["media"][j];
-        if (m["hashed_id"] == hashedId) {
-          return [m["name"], m["short_description"]];
-        }
-      }
-    }
-    return null;
-  }
+= javascript_include_tag "hover_descriptions"
 
-  function appendToDescription(description) {
-    var description_box = $('.description_for_hover .description_text_box');
-    if (description[0] != description_box.find('h1').text()) {
-      description_box.html("").append("<h1>" + description[0] + "</h1><p>" + description[1] + "</p>");
-    }
-  }
-
-  function positionDescription(thumbnail) {
-    var offset = thumbnail.offset(),
-      padding = 25;
-    $('.description_for_hover').css({
-      "top": offset.top + thumbnail.outerHeight(),
-      "left": offset.left - thumbnail.width()/2
-    });
-  }
-
+:javascript
   $(document).ready(function () {
-
-    $.fn.visibilityToggle = function() {
-      return this.css('visibility', function(i, visibility) {
-        return (visibility == "visible") ? "hidden" : "visible";
-      });
-    }
 
     $(".media_carousel").jcarousel({
       visible: 7
     });
 
     $('.thumbnail').on('hover', function() {
-      appendToDescription(getMediaDescription($(this).find('img')[0].dataset["mediaId"]));
-      $('.description_for_hover').toggleClass('visible');
+      appendToDescription(getMediaDescription(projects, $(this).find('img')[0].dataset["mediaId"]));
+      $('.hover_description').toggleClass('visible');
       positionDescription($(this).find('img'));
     });
   });

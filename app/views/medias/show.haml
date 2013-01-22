@@ -17,7 +17,8 @@
         - @media.project.media.each do |m|
           %li
             %a{ :href => media_path(m) }
-              %img{ :src => m.thumbnail }
+              %div.thumbnail{ :class => "thumbnail_color_#{@media.project.color}" }
+                %img{ :src => m.thumbnail, "data-media-id" => m.hashed_id }
         - extra_placeholders = [ 4 - @media.project.media.count, 0 ].max
         - extra_placeholders.times do
           %li
@@ -51,6 +52,13 @@
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> 
 
 :javascript
+  var project = #{@media.project.to_json(include: :media)};
+  var project_color = "#{@media.project.color}";
+
+= javascript_include_tag "lightbulb_and_title"
+= javascript_include_tag "hover_descriptions"
+
+:javascript
   $(document).ready(function() {
 
     $("#media_carousel").jcarousel({
@@ -58,15 +66,9 @@
       start: #{@media.index_in_project + 1}
     });
 
-    var light_bulb = $('.light-bulb a'),
-      project_color = "#{@media.project.color}",
-      project_title = $(".title-color-" + project_color);
-
-    light_bulb.on("hover", function() {
-      project_title.toggleClass('hovered');
-    });
-
-    project_title.on("hover", function() {
-      light_bulb.toggleClass('hovered');
+    $('.thumbnail').on('hover', function() {
+      appendToDescription(getMediaDescription(project, $(this).find('img')[0].dataset["mediaId"]));
+      positionDescription($(this).find('img'));
+      $('.hover_description').toggleClass('visible');
     });
   });
