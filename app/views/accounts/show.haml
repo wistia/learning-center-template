@@ -30,7 +30,8 @@
               - p.media.each do |m|
                 %li
                   %a{ :href => media_path(m) }
-                    %img.thumbnail{ :src => m.thumbnail, "data-media-id" => m.hashed_id }
+                    %div.thumbnail{ :class => "thumbnail_color_#{p.color}" }
+                      %img{ :src => m.thumbnail, "data-media-id" => m.hashed_id }
               - extra_placeholders = [ 7 - p.media.count, 0 ].max
               - extra_placeholders.times do
                 %li
@@ -86,8 +87,8 @@
     });
 
     $('.thumbnail').on('hover', function() {
-      appendToDescription(getMediaDescription($(this)[0].dataset["mediaId"]));
+      appendToDescription(getMediaDescription($(this).find('img')[0].dataset["mediaId"]));
       $('.description_for_hover').toggleClass('visible');
-      positionDescription($(this));
+      positionDescription($(this).find('img'));
     });
   });

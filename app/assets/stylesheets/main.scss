@@ -203,3 +203,52 @@ body {
     }
   }
 }
+
+// for all carousel thumbnails, errrwhere
+%thumbnail_color {
+  position: relative;  
+  cursor: pointer;  
+}
+
+%thumbnail_link_before {  
+  content: "";  
+  display: block;  
+  position: absolute;  
+  top: 0;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  background: none;  
+  -moz-transition: background .3s linear;  
+  -webkit-transition: background .3s linear;  
+  -ms-transition: background .3s linear;  
+  -o-transition: background .3s linear;  
+  transition: background .3s linear;  
+}
+
+@each $color in $colors {
+  .thumbnail_color_#{$color} {
+    @extend %thumbnail_color;
+  }
+  .thumbnail_color_#{$color}:before {
+    @extend %thumbnail_link_before;
+  }
+  .videos ul li a:hover {
+    .thumbnail_color_#{$color}:before {
+      background: rgba(hex-color($color), 0.5);
+      content: url("/learning/images/small_play_button.png")
+    }
+  }
+  .media-tile:hover {
+    .thumbnail_color_#{$color}:before {
+      background: rgba(hex-color($color), 0.5);
+      content: url("/learning/images/large_play_button.png")
+    }
+  }
+}
+
+.videos ul li a {
+  width: 100px;
+  height: 60px;
+  display: block;
+}
