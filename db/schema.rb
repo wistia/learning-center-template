@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130110202757) do
+ActiveRecord::Schema.define(:version => 20130122154934) do
 
   create_table "medias", :force => true do |t|
     t.string   "hashed_id"
@@ -35,5 +35,16 @@ ActiveRecord::Schema.define(:version => 20130110202757) do
     t.integer "position"
     t.boolean "is_current"
   end
+
+  create_table "slugs", :force => true do |t|
+    t.string  "hashed_id",                        :null => false
+    t.string  "key",                              :null => false
+    t.string  "resource_type",                    :null => false
+    t.boolean "active",        :default => false, :null => false
+  end
+
+  add_index "slugs", ["hashed_id"], :name => "index_slugs_on_hashed_id"
+  add_index "slugs", ["key"], :name => "index_slugs_on_key", :unique => true
+  add_index "slugs", ["resource_type"], :name => "index_slugs_on_resource_type"
 
 end

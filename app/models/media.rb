@@ -1,5 +1,6 @@
 require 'uri'
 require 'chronic_duration'
+require 'friendly_ids'
 
 class Media < ActiveRecord::Base
   belongs_to :project
@@ -22,7 +23,11 @@ class Media < ActiveRecord::Base
     :position,
     :is_current
 
-  
+  include FriendlyIds
+
+  after_create :update_slugs
+
+
   def medium_thumbnail
     uri = URI(thumbnail)
     uri.query = "image_crop_resized=260x146"
@@ -46,11 +51,6 @@ class Media < ActiveRecord::Base
       result = "0:#{result}"
     end
     result
-  end
-
-
-  def to_param
-    hashed_id
   end
 
 

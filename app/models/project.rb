@@ -1,18 +1,19 @@
+require 'friendly_ids'
+
 class Project < ActiveRecord::Base
   has_many :media, :class_name => "Media"
   attr_accessible :name, :description, :color, :hashed_id, :position, :is_current
 
   default_scope where(:is_current => true)
 
+  after_create :update_slugs
+
+  include FriendlyIds
+
 
   def total_media_duration
     total = media.sum(:duration) / 60
     total.round
-  end
-
-
-  def to_param
-    hashed_id
   end
 
 

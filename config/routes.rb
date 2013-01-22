@@ -1,7 +1,6 @@
 LearningCenter::Application.routes.draw do
   scope '/learning' do
-    resources :projects, only: :show
-    resources :medias, only: :show
+    get ':id' => 'items#show', :as => 'item'
     root :to => 'accounts#show'
   end
 
