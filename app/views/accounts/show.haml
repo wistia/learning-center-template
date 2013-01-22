@@ -11,9 +11,26 @@
   #intro-video
     <div id="wistia_076gd32fij" class="wistia_embed" style="width:960px;height:450px;" data-video-width="960" data-video-height="450">&nbsp;</div>
 <script charset="ISO-8859-1" src="http://fast.wistia.com/static/concat/E-v1.js"></script>
-<script>wistiaEmbed = Wistia.embed("076gd32fij", {version: "v1", videoWidth: 960, videoHeight: 450, playButton: true, controlsVisibleOnLoad: false, playerColor: "54bbff"
-});
-</script>
+:javascript
+  wistiaEmbed = Wistia.embed("076gd32fij", {
+    version: "v1", 
+    videoWidth: 960, 
+    videoHeight: 450, 
+    playButton: true, 
+    controlsVisibleOnLoad: false, 
+    playerColor: "54bbff", 
+    plugin: {
+      'requireEmail-v1': {
+        "topText":"Stay up to date!",
+        "bottomText":"Enter your email address and we'll let you know\nwhen we add new content to the learning center.",
+        "time":"end",
+        "allowRewatch":true,
+        "style":{
+          "backgroundColor":"#303030"
+        }
+      }
+    }
+  });
 
 #main-container
   #main
