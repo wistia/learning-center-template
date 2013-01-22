@@ -1,8 +1,7 @@
 class ItemsController < ApplicationController
 
   def show
-    item = Project.find_by_slug(params[:id])
-    item = Media.find_by_slug(params[:id]) unless item
+    item = Slug.get_item(params[:id])
 
     if item.is_a?(Project)
       @project = item
