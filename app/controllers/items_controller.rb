@@ -1,7 +1,7 @@
 class ItemsController < ApplicationController
 
   def show
-    item = Slug.get_item(params[:id])
+    item = Slug.where(key: params[:id]).first.try(:item)
 
     if item.is_a?(Project)
       @project = item

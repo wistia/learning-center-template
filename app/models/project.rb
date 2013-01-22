@@ -11,13 +11,6 @@ class Project < ActiveRecord::Base
   include FriendlyIds
 
 
-  def self.find_by_slug(slug)
-    s = Slug.where(slug: slug, resource_type: 'Project').first
-    return nil unless s
-    Project.where(hashed_id: s.hashed_id).first
-  end
-
-
   def total_media_duration
     total = media.sum(:duration) / 60
     total.round

@@ -28,13 +28,6 @@ class Media < ActiveRecord::Base
   after_create :update_slugs
 
 
-  def self.find_by_slug(slug)
-    s = Slug.where(slug: slug, resource_type: 'Media').first
-    return nil unless s
-    Media.where(hashed_id: s.hashed_id).first
-  end
-
-
   def medium_thumbnail
     uri = URI(thumbnail)
     uri.query = "image_crop_resized=260x146"
