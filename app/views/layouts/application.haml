@@ -8,13 +8,6 @@
     = yield :html_head
 
   %body
-    #global-header-container.cf
-      #global-header.cf
-        .logo
-          %a{ :href => 'http://www.wistia.com' }
-        .links
-          %a{ :href => '#' } Learning
-          %a{ :href => '#' } Pricing
-          %a{ :href => '#' } Blog
-          %a{ :href => '#' } Login
-      = yield
+    = render :partial => 'layouts/header'
+    = yield
+    = render :partial => 'layouts/footer'
