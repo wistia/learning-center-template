@@ -1,4 +1,4 @@
-$green: #87D452;
+$green: #BDE26E;
 $sea_foam: #5AD4A0;
 $blue: #63D0DB;
 $purple: #5c9ed6;
@@ -180,8 +180,8 @@ body {
     opacity: 1;
   }
   .tooth {
-    background: transparent url("/learning/images/toothy.png") no-repeat;
-    height: 14px;
+    background: transparent url("/learning/images/toothsome.png") no-repeat;
+    height: 18px;
     width: 27px;
     margin: 0 auto;
     position: relative;
@@ -191,8 +191,9 @@ body {
     background-color: white;
     border: 2px solid #DDD;
     color: #777;
-    padding: 10px;
+    padding: 12px 15px 4px 15px;
     position: relative;
+    text-align: left;
     top: -2px;
     h1 {
       font-size: 18px;

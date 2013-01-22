@@ -17,7 +17,7 @@
 
       a {
         display: inline-block;
-        height: 78px;
+        height: 77px;
         width: 58px;
       }
 
@@ -76,6 +76,7 @@
         display: block;
         margin: 0 auto;
         padding: 25px;
+        position: relative;
         moz-box-shadow: 0 0 10px rgba(0,0,0,.05);
         -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .05);
         box-shadow: 0 0 10px rgba(0, 0, 0, .05);
@@ -100,7 +101,7 @@
           }
 
           input {
-            height: 20px;
+            height: 17px;
             width: 150px;
             font-size: 16px;
             font-family: 'Open Sans', sans-serif;
@@ -117,6 +118,7 @@
             position: absolute;
             width: 36px;
             height: 48px;
+            left: 198px;
           }
       }
     }

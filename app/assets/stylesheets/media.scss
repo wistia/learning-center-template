@@ -19,7 +19,7 @@
 
   a {
     display: inline-block;
-    height: 78px;
+    height: 77px;
     width: 58px;
     &:hover, &.hovered {
       background-position: 0 -79px;
@@ -59,7 +59,15 @@
 }
 
 #video-container {
-  background-color: $light_grey_background;
+  background: #f7f6f4;
+  background: -moz-linear-gradient(top, #f7f6f4 60%, #e5e4e3 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #f7f6f4), color-stop(100%, #e5e4e3));
+  background: -webkit-linear-gradient(top, #f7f6f4 60%, #e5e4e3 100%);
+  background: -o-linear-gradient(top, #f7f6f4 60%, #e5e4e3 100%);
+  background: -ms-linear-gradient(top, #f7f6f4 60%, #e5e4e3 100%);
+  background: linear-gradient(to bottom, #f7f6f4 60%, #e5e4e3 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f6f4', endColorstr='#e5e4e3',GradientType=0 );
+
 }
 
 

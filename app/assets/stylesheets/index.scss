@@ -6,7 +6,14 @@
 }
 
 #intro-video-container {
-  background-color: #e6e6e6;
+  background: #f7f6f4;
+  background: -moz-linear-gradient(top, #f7f6f4 60%, #e5e4e3 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #f7f6f4), color-stop(100%, #e5e4e3));
+  background: -webkit-linear-gradient(top, #f7f6f4 60%, #e5e4e3 100%);
+  background: -o-linear-gradient(top, #f7f6f4 60%, #e5e4e3 100%);
+  background: -ms-linear-gradient(top, #f7f6f4 60%, #e5e4e3 100%);
+  background: linear-gradient(to bottom, #f7f6f4 60%, #e5e4e3 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f6f4', endColorstr='#e5e4e3',GradientType=0 );
   text-align: center;
   margin: 0;
   padding: 0;
@@ -49,7 +56,7 @@
 
     .title {
       text-transform: uppercase;
-      letter-spacing: 3px;
+      letter-spacing: 2px;
       float: left;
 
       a, a:hover {
