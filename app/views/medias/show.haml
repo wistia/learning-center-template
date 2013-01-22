@@ -6,9 +6,9 @@
 #local-header-container
   #local-header.cf
     .light-bulb
-      %a{ :href => "#{project_path(@media.project)}", :style => "background-image: url(/learning/images/lightbulb_#{@media.project.color}.png);" }
+      %a{ :href => "#{item_path(@media.project)}", :style => "background-image: url(/learning/images/lightbulb_#{@media.project.color}.png);" }
     .video-title
-      %a{ :href => "#{project_path(@media.project)}", :class => "title-color-#{@media.project.color}"} 
+      %a{ :href => "#{item_path(@media.project)}", :class => "title-color-#{@media.project.color}"} 
         =@media.project.name
 
 
@@ -16,7 +16,7 @@
       %ul#media_carousel.jcarousel-skin-tango 
         - @media.project.media.each do |m|
           %li
-            %a{ :href => media_path(m) }
+            %a{ :href => item_path(m) }
               %div.thumbnail{ :class => "thumbnail_color_#{@media.project.color}" }
                 %img{ :src => m.thumbnail, "data-media-id" => m.hashed_id }
         - extra_placeholders = [ 4 - @media.project.media.count, 0 ].max

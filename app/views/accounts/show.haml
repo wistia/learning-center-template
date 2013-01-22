@@ -21,7 +21,7 @@
         %div{ :class => ["project", "cf"], :id => "project_#{p.id}"}
           %div{ :class => ["header", p.color, "cf"] }
             .title
-              %a{ :href => project_path(p) }= p.name
+              %a{ :href => item_path(p) }= p.name
             .info
               = "#{p.media.count} videos / #{p.total_media_duration} minutes"
 
@@ -29,7 +29,7 @@
             %ul.media_carousel.jcarousel-skin-tango
               - p.media.each do |m|
                 %li
-                  %a{ :href => media_path(m) }
+                  %a{ :href => item_path(m) }
                     %div.thumbnail{ :class => "thumbnail_color_#{p.color}" }
                       %img{ :src => m.thumbnail, "data-media-id" => m.hashed_id }
               - extra_placeholders = [ 7 - p.media.count, 0 ].max

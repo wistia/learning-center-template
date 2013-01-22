@@ -11,11 +11,11 @@
     - @project.media.each do |m|
       .media-tile-container
         .media-tile
-          %a{ :href => media_path(m) }
+          %a{ :href => item_path(m) }
             %div{ :class => "thumbnail_color_#{@project.color}" }
               %img{ :src => "#{m.medium_thumbnail}" }
           .title
-            %a{ :href => media_path(m) }= m.name
+            %a{ :href => item_path(m) }= m.name
           .description= m.short_description.html_safe
           .info.cf
             .time
@@ -24,7 +24,7 @@
             .comments
               .info-title Comments
               .info-val
-                %a{ :href => "#{media_path(m)}#disqus_thread", "data-disqus-identifier" => m.hashed_id, :style => "color: ##{@project.hex_color}" }
+                %a{ :href => "#{item_path(m)}#disqus_thread", "data-disqus-identifier" => m.hashed_id, :style => "color: ##{@project.hex_color}" }
 
     .email-tile-container
       .email-tile
@@ -34,7 +34,7 @@
         %form{ :action => "http://pages.wistia.com/l/9972/2013-01-21/bvxl2", :method => "post" }
           %input{ :type => "text", :name => "email", :value => "Email Address", :onblur => "if(this.value==''){this.value='Email Address'};", :onclick => "if(this.value=='Email Address'){this.value=''};" }
             %button{ :style => "background: url('/learning/images/email_submit_#{@project.color}.png');" }
-      
+
 :javascript
   /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
   var disqus_shortname = 'wistialearning'; // required: replace example with your forum shortname
@@ -62,4 +62,4 @@
       }
 
     );
-  }); 
+  });

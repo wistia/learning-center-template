@@ -22,7 +22,40 @@ class Media < ActiveRecord::Base
     :position,
     :is_current
 
-  
+  after_create :update_slugs
+
+
+  def self.find_by_slug(slug)
+    s = Slug.where(slug: slug, type: 'Media').first
+    return nil unless s
+    Media.where(hashed_id: s.hashed_id).first
+  end
+
+
+  def to_param
+    Slug.where(hashed_id: hashed_id, type: 'Media', active: true).first.try(:slug)
+  end
+
+
+  def update_slugs
+    # do nothing if the correct slug already exists
+    s = Slug.where(type: 'Media', hashed_id: hashed_id, slug: name.parameterize, active: true).first
+    return if s
+
+    # if the slug exists but is not current, make it the current slug
+    s = Slug.where(type: 'Media', hashed_id: hashed_id, slug: name.parameterize, active: false).first
+    if s
+      Slug.update_all([ 'active = ?', false ], [ "type = 'Media' and hashed_id = ?", hashed_id ])
+      s.update_attribute(:active, true)
+      return
+    end
+
+    # create the slug if necessary
+    Slug.update_all([ 'active = ?', false ], [ "type = 'Media' and hashed_id = ?", hashed_id ])
+    s = Slug.create(type: 'Media', hashed_id: hashed_id, slug: name.parameterize, active: true)
+  end
+
+
   def medium_thumbnail
     uri = URI(thumbnail)
     uri.query = "image_crop_resized=260x146"
@@ -46,11 +79,6 @@ class Media < ActiveRecord::Base
       result = "0:#{result}"
     end
     result
-  end
-
-
-  def to_param
-    hashed_id
   end
 
 
