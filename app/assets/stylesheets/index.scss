@@ -2,7 +2,15 @@
 
 #local-header {
   background-color: $white;
-  padding: 21px 0px 35px 0px;
+  padding: 5px 0px 51px 0px;
+  height: 82px;
+  h1 {
+    color: #555;
+    font-weight: 100;
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 7px;
+  }
 }
 
 #intro-video-container {
