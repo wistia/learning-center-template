@@ -37,14 +37,14 @@ ActiveRecord::Schema.define(:version => 20130122154934) do
   end
 
   create_table "slugs", :force => true do |t|
-    t.string  "hashed_id",                    :null => false
-    t.string  "slug",                         :null => false
-    t.string  "type",                         :null => false
-    t.boolean "active",    :default => false, :null => false
+    t.string  "hashed_id",                        :null => false
+    t.string  "slug",                             :null => false
+    t.string  "resource_type",                    :null => false
+    t.boolean "active",        :default => false, :null => false
   end
 
   add_index "slugs", ["hashed_id"], :name => "index_slugs_on_hashed_id"
+  add_index "slugs", ["resource_type"], :name => "index_slugs_on_resource_type"
   add_index "slugs", ["slug"], :name => "index_slugs_on_slug", :unique => true
-  add_index "slugs", ["type"], :name => "index_slugs_on_type"
 
 end
