@@ -62,7 +62,9 @@ module LearningCenter
       'jquery-1.8.3.min.js',
       'jquery.jcarousel.min.js',
       'jcarousel_media.css',
-      'jcarousel_account.css'
+      'jcarousel_account.css',
+      'hover_descriptions.js',
+      'lightbulb_and_title.js'
     ]
 
     # Enable the asset pipeline
