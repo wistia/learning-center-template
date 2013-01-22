@@ -15,7 +15,7 @@
     .video-carousel.cf
       %ul#media_carousel.jcarousel-skin-tango 
         - @media.project.media.each do |m|
-          %li
+          %li{ :class => m.hashed_id == @media.hashed_id ? "current_#{@media.project.color}" : "" }
             %a{ :href => item_path(m) }
               %div.thumbnail{ :class => "thumbnail_color_#{@media.project.color}" }
                 %img{ :src => m.thumbnail, "data-media-id" => m.hashed_id }

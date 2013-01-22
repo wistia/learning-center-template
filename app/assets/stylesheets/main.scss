@@ -247,16 +247,17 @@ body {
   .thumbnail_color_#{$color}:before {
     @extend %thumbnail_link_before;
   }
-  .videos ul li a:hover, .jcarousel-clip ul li a:hover {
-    .thumbnail_color_#{$color}:before {
+  a:hover, a:hover, .current_#{$color} {
+    .thumbnail_color_#{$color}:before, {
       background: rgba(hex-color($color), 0.5);
-      content: url("/learning/images/small_play_button.png")
+      content: url("/learning/images/small_play_button.png");
     }
   }
+
   .media-tile:hover {
     .thumbnail_color_#{$color}:before {
       background: rgba(hex-color($color), 0.5);
-      content: url("/learning/images/large_play_button.png")
+      content: url("/learning/images/large_play_button.png");
     }
   }
 }
