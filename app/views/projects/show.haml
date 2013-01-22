@@ -4,6 +4,11 @@
       %a{ :href => '/learning', :style => "background-image: url(/learning/images/lightbulb_#{@project.color}.png);" }
     .project-title
       %h1= @project.name
+      .back_to_central
+        %a{ :href => '/learning' } Back to Learning Central
+
+
+
     .project-description
       = @project.description.html_safe
 #media-tiles-container

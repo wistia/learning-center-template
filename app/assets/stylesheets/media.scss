@@ -16,6 +16,7 @@
 
 .light-bulb {
   float: left;
+  margin-top: 13px;
 
   a {
     display: inline-block;
@@ -29,7 +30,7 @@
 
 .video-title {
   float: left;
-  padding: 5px 20px;
+  padding: 0px 20px;
   width: 240px;
 
   a {
@@ -42,12 +43,20 @@
     text-decoration: none;
   }
 
-  .back_to_central a {
-    font-size: 12px;
-  }
+  .back_to_central { 
+    margin-top: 7px;
+    a {
+      color: #999;
+      letter-spacing: 0px;
+      font-size: 14px;
+      font-style: italic;
+      font-weight: 100;
+      text-transform: uppercase;
+    }
+  }  
 
   .back_to_central a:hover {
-    text-decoration: underline;
+    color: #333;
   }
 }
 
