@@ -2,6 +2,12 @@ $green: #BDE26E;
 $sea_foam: #5AD4A0;
 $blue: #63D0DB;
 $purple: #5c9ed6;
+
+$dark_green: #bdd36a;
+$dark_sea_foam: #54c690;
+$dark_blue: #5ccccc;
+$dark_purple: #559bc6;
+
 $white: #fff;
 $light_grey_background: #f7f6f4;
 $dark_grey: #646059;
@@ -124,9 +130,16 @@ body {
   margin-bottom: 40px;
 
   .green { background-color: $green; }
+  .green:hover { background-color: $dark_green; }
+
   .sea_foam { background-color: $sea_foam; }
+  .sea_foam:hover { background-color: $dark_sea_foam; }
+
   .blue { background-color: $blue; }
-  .purple { background-color: $purple }
+  .blue:hover { background-color: $dark_blue; }
+
+  .purple { background-color: $purple; }
+  .purple:hover { background-color: $dark_purple; }
 
   .header {
     color: $white;

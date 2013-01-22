@@ -20,11 +20,12 @@
     #project-list
       - @projects.each do |p|
         %div{ :class => ["project", "cf"], :id => "project_#{p.id}"}
-          %div{ :class => ["header", p.color, "cf"] }
-            .title
-              %a{ :href => item_path(p) }= p.name
-            .info
-              = "#{p.media.count} videos / #{p.total_media_duration} minutes"
+          %a{ :href => item_path(p) }
+            %div{ :class => ["header", p.color, "cf"] }
+              .title
+                = p.name
+              .info
+                = "#{p.media.count} videos / #{p.total_media_duration} minutes"
 
           .videos.cf
             %ul.media_carousel.jcarousel-skin-tango
