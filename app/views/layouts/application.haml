@@ -11,3 +11,20 @@
     = render :partial => 'layouts/header'
     = yield
     = render :partial => 'layouts/footer'
+
+    <script src="http://fast.wistia.com/static/E-v1.js"></script>
+    <script src="http://fast.wistia.com/static/embed_shepherd-v1.js"></script>
+    :javascript
+      wistiaEmbeds.bind("conversion", function(video, type, data) {
+        if (type === "pre-roll-email") {
+          Wistia.localStorage("learning-center-email", data);
+        }
+      });
+
+      wistiaEmbeds.onFind(function(video) {
+        var email;
+        if (email = Wistia.localStorage("learning-center-email")) {
+          video.setEmail(email);
+          video.rebuild();
+        }
+      });
