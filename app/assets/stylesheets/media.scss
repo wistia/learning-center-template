@@ -91,15 +91,40 @@
   #video {
     overflow-y: visible;
     margin: 0 auto;
+    position: relative;
 
     .next {
-      float: right;
-      margin-right: 50px;
+      height: 100%;
+      background: transparent no-repeat url(/learning/images/next.png) 230px center;
+      position: absolute;
+      right: 0;
+      top: 0;
+      text-decoration: none;
+      width: 300px;
+      filter: alpha(opacity=30);
+      opacity: 0.3;
+    }
+
+    .next:hover {
+      filter: alpha(opacity=100);
+      opacity: 1;
     }
 
     .previous {
-      float: left;
-      margin-left: 50px;
+      height: 100%;
+      background: transparent no-repeat url(/learning/images/previous.png) 30px center;
+      position: absolute;
+      left: 0;
+      top: 0;
+      text-decoration: none;
+      width: 300px;
+      filter: alpha(opacity=30);
+      opacity: 0.3;
+    }
+
+    .previous:hover {
+      filter: alpha(opacity=100);
+      opacity: 1;
     }
   }
 }
