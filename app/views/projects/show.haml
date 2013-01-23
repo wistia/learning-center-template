@@ -31,7 +31,7 @@
               .info-val
                 %a{ :href => "#{item_path(m)}#disqus_thread", "data-disqus-identifier" => m.hashed_id, :style => "color: ##{@project.hex_color}" }
 
-    .email-tile-container
+    .email-tile-container{ style: 'display:none' }
       .email-tile
         .front.face
           %img{ :src => "/learning/images/email_#{@project.color}.png" }
@@ -66,15 +66,19 @@
   }());
 
 :javascript
-  $(function () {
+  $(function() {
+    if (!getEmail()) {
+      $('.email-tile-container').show();
+    };
+
     $(".media-tile").hover(
 
-      function () {
+      function() {
         $(this).find(".description").hide();
         $(this).find(".info").show();
       },
 
-      function () {
+      function() {
         $(this).find(".info").hide();
         $(this).find(".description").show();
       }
@@ -89,6 +93,9 @@
 
       // no email, no problem
       if (email.indexOf('@') < 1) { return false; }
+
+      // store locally, you know, so we don't show post-roll collectors + this
+      setEmail(email);
 
       // send to par-dee
       var pardotIframeSrc = "http://pages.wistia.com/l/9972/2013-01-21/bvxl2?email=" + escape(email) + "&learning_center_project=" + escape(document.title);
