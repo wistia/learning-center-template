@@ -2,6 +2,10 @@ class ItemsController < ApplicationController
 
   def show
     item = Slug.where(key: params[:id]).first.try(:item)
+    raise ActiveRecord::RecordNotFound unless item
+
+    # Set the page title to the name of this item
+    @title = item.name
 
     if item.is_a?(Project)
       @project = item
@@ -11,9 +15,9 @@ class ItemsController < ApplicationController
       @media = item
       @stylesheet = 'media'
       render 'medias/show'
+    else
+      raise "Item is neither a Project or a Media. Whaaaaaaa?"
     end
-
-    raise ActiveRecord::RecordNotFound unless item
   end
 
 end
