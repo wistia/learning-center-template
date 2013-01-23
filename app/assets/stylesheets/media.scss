@@ -85,7 +85,23 @@
   background: -ms-linear-gradient(top, #f7f6f4 60%, #e5e4e3 100%);
   background: linear-gradient(to bottom, #f7f6f4 60%, #e5e4e3 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f6f4', endColorstr='#e5e4e3',GradientType=0 );
+  overflow-y: visible;
+  text-align: center;
 
+  #video {
+    overflow-y: visible;
+    margin: 0 auto;
+
+    .next {
+      float: right;
+      margin-right: 50px;
+    }
+
+    .previous {
+      float: left;
+      margin-left: 50px;
+    }
+  }
 }
 
 

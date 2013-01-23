@@ -28,6 +28,16 @@ class Media < ActiveRecord::Base
   after_create :update_slugs
 
 
+  def next_video
+    Media.where(project_id: project_id, position: position + 1).first
+  end
+
+
+  def previous_video
+    Media.where(project_id: project_id, position: position - 1).first
+  end
+
+
   def medium_thumbnail
     uri = URI(thumbnail)
     uri.query = "image_crop_resized=260x146"

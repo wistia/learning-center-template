@@ -28,9 +28,15 @@
             %img{ :src => "/learning/images/empty_thumbnail_#{@media.project.color}.png" }
 
 - video_height = (960 * @media.aspect_ratio).to_i
-#video-container{ :style => "height: #{video_height}px; overflow-y: visible;" }
-  #video{ :style => "height: #{video_height}px; overflow-y: visible;" }
+#video-container{ :style => "height: #{video_height}px;" }
+  #video.cf{ :style => "height: #{video_height}px;" }
+    .previous{ :style => "margin-top: #{(video_height / 2) - 22}px;" }
+      %a{ :href => (@media.previous_video ? item_path(@media.previous_video) : '#') }
+        %img{ :src => '/learning/images/previous.png' }
     %iframe{ :src => "http://fast.wistia.com/embed/iframe/#{@media.hashed_id}?videoWidth=960&videoHeight=#{video_height + 26}&playerColor=#{@media.project.hex_color}&plugin[socialbar-v1][buttons]=email-twitter-facebook&plugin[requireEmail-v1]=%7B%22topText%22%3A%22Stay%20up%20to%20date!%22%2C%22bottomText%22%3A%22Enter%20your%20email%20to%20stay%20up%20to%20date%20as%5Cnwe%20add%20more%20content%20to%20the%20Learning%20Center.%22%2C%22time%22%3A%22end%22%2C%22allowRewatch%22%3Atrue%2C%22style%22%3A%7B%22backgroundColor%22%3A%22%23303030%22%7D%7D", :width => 960, :height => video_height + 26, :frameborder => 0, :class => 'wistia_embed', :name => 'wistia_embed', :allowtransparency => true, :scrolling => 'no' }
+    .next{ :style => "margin-top: #{(video_height / 2) - 22}px;" }
+      %a{ :href => (@media.next_video ? item_path(@media.next_video) : '#') }
+        %img{ :src => '/learning/images/next.png' }
 
 
 #video-info-container
