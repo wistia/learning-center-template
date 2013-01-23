@@ -188,6 +188,7 @@ body {
   -webkit-transition: opacity 0.1s linear;
   -o-transition: opacity 0.1s linear;
   transition: opacity 0.1s linear;
+  z-index: 999;
   &.visible {
     visibility: visible;
     opacity: 1;
