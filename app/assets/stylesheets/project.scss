@@ -87,18 +87,39 @@
       width: 260px;
       float: left;
       margin: 32px 22px 32px 22px;
+      -webkit-perspective: 1000;
 
       .email-tile {
-        background-color: #eae5e1;
-        color: #6a6a6a;
-        height: 290px;
-        display: block;
-        margin: 0 auto;
-        padding: 25px;
+
         position: relative;
-        moz-box-shadow: 0 0 10px rgba(0,0,0,.05);
-        -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .05);
-        box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+        -webkit-transform-style: preserve-3d;
+        -webkit-transition: 0.5s;
+
+        .face {
+          background-color: #eae5e1;
+          color: #6a6a6a;
+          height: 290px;
+          display: block;
+          margin: 0 auto;
+          padding: 25px;
+          moz-box-shadow: 0 0 10px rgba(0,0,0,.05);
+          -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+          box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+          position: absolute;
+          -webkit-backface-visibility: hidden;
+        }
+
+          .back {
+            -webkit-transform: rotateY(180deg);
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+
+            .text {
+              padding: 0 10px;
+            }
+          }
 
           img {
             padding-bottom: 30px;
@@ -138,8 +159,13 @@
             width: 36px;
             height: 48px;
             left: 198px;
+            -webkit-transform: translateZ(1px);
           }
       }
+    }
+
+    .email-tile.flipped {
+      -webkit-transform: rotateY(-180deg);
     }
 
     .media-tile-container {

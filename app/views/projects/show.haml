@@ -33,12 +33,25 @@
 
     .email-tile-container
       .email-tile
-        %img{ :src => "/learning/images/email_#{@project.color}.png" }
-        .title= "Stay up to date"
-        .text= "Enter your email to stay up to date as we add more content to the Learning Center!"
-        %form{ :action => "http://pages.wistia.com/l/9972/2013-01-21/bvxl2", :method => "post" }
-          %input{ :type => "text", :name => "email", :value => "Email Address", :onblur => "if(this.value==''){this.value='Email Address'};", :onclick => "if(this.value=='Email Address'){this.value=''};" }
-          %input{ :type => "submit", :value => "",  :style => "background: url('/learning/images/email_submit_#{@project.color}.png');" }
+        .front.face
+          %img{ :src => "/learning/images/email_#{@project.color}.png" }
+
+          .title Stay up to date
+          .text
+            Enter your email to stay up to date as we add more 
+            content to the Learning Center!
+
+          %form{ :action => "#", :method => "post" }
+            %input.email{ :type => "text", :name => "email", :value => "Email address", :onblur => "if(this.value==''){this.value='Email address';$(this).css({color:'#ccc'});};", :onfocus => "if(this.value=='Email address'){this.value='';$(this).css({color:'#000'});};" }
+            %input{ :type => "submit", :value => "",  :style => "background: url('/learning/images/email_submit_#{@project.color}.png');" }
+
+        .back.face
+          %img{ :src => "/learning/images/email_#{@project.color}.png" }
+          .title Thank you!
+          .text
+            Start refreshing your inbox!
+            Well, not really, but we do have some more great videos in the works.
+
 
 :javascript
   /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -67,4 +80,22 @@
       }
 
     );
+
+
+    // this is to submit email addies to pardizzle, y'all
+    $('.email-tile-container form').on('submit', function() {
+
+      var email = $('.email-tile-container form .email').val();
+
+      // no email, no problem
+      if (email.indexOf('@') < 1) { return false; }
+
+      // send to par-dee
+      var pardotIframeSrc = "http://pages.wistia.com/l/9972/2013-01-21/bvxl2?email=" + escape(email) + "&learning_center_project=" + escape(document.title);
+      $('.email-tile-container').append("<iframe src='" + pardotIframeSrc + "' style='width: 1px; height: 1px; border: 0;'></iframe>");
+
+      $('.email-tile').addClass('flipped');
+
+      return false;
+    });
   });
