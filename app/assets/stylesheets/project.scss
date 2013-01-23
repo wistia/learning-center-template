@@ -115,6 +115,7 @@
             top: 0;
             left: 0;
             text-align: center;
+            display: none;
 
             .text {
               padding: 0 10px;
@@ -166,6 +167,9 @@
 
     .email-tile.flipped {
       -webkit-transform: rotateY(-180deg);
+      .back {
+        display: block;
+      }
     }
 
     .media-tile-container {
