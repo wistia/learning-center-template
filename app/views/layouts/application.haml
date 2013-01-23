@@ -10,20 +10,6 @@
     <script src="http://fast.wistia.com/static/E-v1.js"></script>
     <script src="http://fast.wistia.com/static/embed_shepherd-v1.js"></script>
     :javascript
-      wistiaEmbeds.bind("conversion", function(video, type, data) {
-        if (type === "pre-roll-email") {
-          setEmail(data);
-        }
-      });
-
-      wistiaEmbeds.onFind(function(video) {
-        var email;
-        if (email = getEmail()){
-          video.setEmail(email);
-          video.rebuild();
-        }
-      });
-
       window.setEmail = function(email) {
         Wistia.localStorage("learning-center-email", email);
       };
@@ -31,6 +17,26 @@
       window.getEmail = function() {
         return Wistia.localStorage("learning-center-email");
       };
+
+      wistiaEmbeds.onFind(function(video) {
+        var email;
+        if (email = window.getEmail()){
+          video.setEmail(email);
+          //video.rebuild();
+        }
+
+        // conditionally autoplay
+        if (/\?.*autoplay/i.test(location.href)) {
+          video.play();
+        }
+      });
+      
+      wistiaEmbeds.bind("conversion", function(video, type, data) {
+        if (type === "pre-roll-email") {
+          setEmail(data);
+        }
+      });
+
 
   %body
     = render :partial => 'layouts/header'
