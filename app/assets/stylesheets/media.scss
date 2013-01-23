@@ -65,6 +65,7 @@
   width: 560px;
 }
 
+// make the video title highlight color match the project color
 @each $color in $colors {
   .video-title {
     .title-color-#{$color} {
