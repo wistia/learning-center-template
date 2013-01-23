@@ -22,7 +22,7 @@
         var email;
         if (email = window.getEmail()){
           video.setEmail(email);
-          //video.rebuild();
+          video.reinitializePlugins();
         }
 
         // conditionally autoplay
