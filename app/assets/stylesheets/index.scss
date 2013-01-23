@@ -59,6 +59,10 @@
   .blue { background-color: $blue; }
   .purple { background-color: $purple }
 
+  a {
+    text-decoration: none;
+  }
+
   .header {
     color: $white;
     padding: 10px 37px 9px;
