@@ -1,49 +1,9 @@
-TO DO
-
-- Front page media hovers
-- Post-roll on front page
-- Post-roll on media pages
-- Project page email form
-- Real embed for front page video
-- Use friendly ids / urls look like /learning/projects/video-production
-- Add common header/footer
-- Finalize videos in projects
-
-******
-
-NON CRITICAL
+POST-LAUNCH TODOS
 
 - "New" tags on project page, colored by project
 - Open source this shit
   - Remove secret token and put secret token in config.local.rb
   - Put wistia api password and disqus api key in config.local.rb
-- Get a config.local.rb and config.rb
-
-******
-
-DONE
-
-x Color ID in project database to refresh with data
-x Comments on media page
-x Data importer
-  x Copy in data
-  x Calculate color
-x Make sure URLs are static - hashed IDs instead of numeric
-x Positions for projects
-x Positions for medias
-x New way of splitting up media description fields
-x Lightbulb hover states by project
-  x Project page
-  x Media page
-x Special color for player on media page (playerColor)
-x Use versions while updating
-x Fix style (line height) of media title (second instance)
-x Hover states for project page
-  x Time
-  x Comment count
-x Tinting on project page
-x Play button hover on project page
-x Tinting for entire project page tile (not just image)
-x Social sharing buttons on media page
-x Media page carousels
-x Front page carousels
+- Change blog posts with Learning Center email form to point to LC
+- Fix Disqus links
+- Links in comments open in new window?
