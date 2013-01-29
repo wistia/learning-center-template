@@ -8,7 +8,6 @@
         %a{ :href => '/learning' } Back to Learning Central
 
 
-
     .project-description
       = @project.description.html_safe
 #media-tiles-container
@@ -17,6 +16,8 @@
       .media-tile-container
         .media-tile
           %a{ :href => item_path(m) }
+            - if m.created > 1.month.ago && Time.now.to_date > Date.parse("2013-02-23")              
+              %img.new_tag{ :src => "/learning/images/new_#{@project.color}.png" }
             %div{ :class => "thumbnail_color_#{@project.color}" }
               %img{ :src => "#{m.medium_thumbnail}" }
           .title

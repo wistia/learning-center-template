@@ -187,11 +187,19 @@
 
         a {
           position: relative;
+          display: block;
         }
 
         img {
           margin: 0 auto;
           display: block;
+        }
+
+        .new_tag {
+          position: absolute;
+          top: 12px;
+          left: -14px;
+          z-index: 10;
         }
 
         .title {
