@@ -94,8 +94,10 @@
   $(function () {
     $("#ankle .section .title").hover(function () {
       $(".arrow", this).css("background-position", "0 -14px");
+      $(this).css('color', '#5a5a5a');
     }, function () {
       $(".arrow", this).css("background-position", "");
+      $(this).css('color', '#6a6a6a');
     });
   });
 
