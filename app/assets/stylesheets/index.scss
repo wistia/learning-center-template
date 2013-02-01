@@ -94,3 +94,90 @@
 
   }
 }
+
+#ankle {
+  background: #eae5e1;
+  height: 200px;
+
+  .title { 
+    font-size: 14pt;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding-bottom: 0px;
+    color: #6a6a6a;
+    
+    .arrow {
+      display: inline-block;
+      width: 21px;
+      height: 14px;
+      background-image: url(/learning/images/anklearrows.png);
+      margin-left: 5px;
+    }
+
+    .arrow:hover {
+      background-position: 0 -14px;
+    }
+
+    a {
+      color: #6a6a6a;
+      text-decoration: none;
+    }
+  }
+
+  p {
+    font-size: 11pt;
+    color: #6a6a6a;
+  }
+
+  p:hover {
+    color: #444;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  #container {
+    width: 960px;
+    height: 200px;
+    margin: 0 auto;
+  
+    .section {
+      display: block;
+      width: 250px;
+      float: left;
+      padding: 40px 20px 0px 20px;
+      text-align: left;
+    }
+
+    .divider {
+      display: block;
+      float: left;
+      width: 20px;
+      border-left: 1px solid #cac6c3;
+      height: 130px;
+      margin-top: 30px;
+    }
+
+    .socializing {
+      padding-top: 15px;
+
+      &>* {
+        display: inline-block;
+        *display: inline;
+        vertical-align: top;
+        zoom: 1;
+      }
+    }
+
+    .tooth {
+      position: absolute;
+
+      img {
+        width: 25px;
+        height: 16px;
+        margin-left: 595px;
+      }
+    }
+  }
+}
