@@ -48,6 +48,8 @@ class Media < ActiveRecord::Base
   def raw_thumbnail
     uri = URI(thumbnail)
     uri.query = nil
+    uri.host = 'wistia.sslcs.cdngc.net'
+    uri.scheme = 'https'
     uri.to_s
   end
 
