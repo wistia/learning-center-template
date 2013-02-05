@@ -45,6 +45,13 @@ class Media < ActiveRecord::Base
   end
 
 
+  def raw_thumbnail
+    uri = URI(thumbnail)
+    uri.query = nil
+    uri.to_s
+  end
+
+
   def index_in_project
     index = 0
     project.media.each do |m|
