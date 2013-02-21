@@ -1,5 +1,6 @@
 LearningCenter::Application.routes.draw do
   scope '/learning' do
+    get '/new' => 'submissions#new'
     get ':id' => 'items#show', :as => 'item'
     root :to => 'accounts#show'
   end
