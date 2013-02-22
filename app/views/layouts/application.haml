@@ -32,7 +32,7 @@
       });
       
       wistiaEmbeds.bind("conversion", function(video, type, data) {
-        if (type === "pre-roll-email") {
+        if (type === "post-roll-email") {
           setEmail(data);
         }
       });
