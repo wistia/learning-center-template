@@ -112,8 +112,6 @@ body {
   padding: 35px 0;
 }
 
-
-
 #main-container {
   background-color: $light_grey_background;
   padding: 40px 0;
@@ -158,7 +156,6 @@ body {
 
   .videos {
     background-color: $white;
-
   }
 }
 
@@ -264,4 +261,33 @@ body {
   width: 100px;
   height: 60px;
   display: block;
+}
+
+#submissions {
+
+    .title {
+      text-transform: uppercase;
+      float: left;
+      background-color: $purple;
+    }
+
+    .info {
+      float: right;
+    }
+
+  .content {
+    background-color: $white;
+    text-transform: none;
+    padding: 50px;
+    line-height: 24px;
+  
+    a {
+      color: #8d8d8d;
+      text-decoration: underline;
+    }
+
+    h2 {
+      margin: 0px;
+    }
+  }
 }
