@@ -6,13 +6,13 @@
 #local-header-container
   #local-header.cf
     .light-bulb
-      %a{ :href => '/learning', :style => "background-image: url(/learning/images/lightbulb_#{@media.project.color}.png);" }
+      %a{ :href => '/linkone', :style => "background-image: url(/learning/images/lightbulb_#{@media.project.color}.png);" }
     .video-title
       %div
         %a{ :href => "#{item_path(@media.project)}", :class => "title-color-#{@media.project.color}"} 
           = @media.project.name
       .back_to_central
-        %a{ :href => '/learning' } Back to Learning Central
+        %a{ :href => '/linkone' } Back to Link One
 
 
     .video-carousel.cf
@@ -30,18 +30,11 @@
 - video_height = (960 * @media.aspect_ratio).to_i
 #video-container{ :style => "height: #{video_height}px;" }
   #video.cf{ :style => "height: #{video_height}px;" }
+
     - if @media.previous_video
       %a.previous{ :href => item_path(@media.previous_video) }
     %iframe{ :src => "http://fast.wistia.net/embed/iframe/#{@media.hashed_id}?plugin%5BrequireEmail-v1%5D%5BbottomText%5D=Enter%20your%20email%20to%20stay%20up%20to%20date%20as%0Awe%20add%20more%20content%20to%20the%20Learning%20Center.&plugin%5BrequireEmail-v1%5D%5Btime%5D=end&plugin%5BrequireEmail-v1%5D%5BtopText%5D=Stay%20up%20to%20date%21&plugin%5Bsocialbar-v1%5D%5Bbuttons%5D=email-twitter-facebook&version=v1&videoHeight=#{video_height}&videoWidth=960&volumeControl=true&playerColor=#{@media.project.hex_color}&plugin%5BrequireEmail-v1%5D%5Bprovider%5D=pardot&plugin%5BrequireEmail-v1%5D%5Blist%5D=101481", :width => 960, :height => video_height + 26, :frameborder => 0, :class => 'wistia_embed', :name => 'wistia_embed', :allowtransparency => true, :scrolling => 'no' }
-    %meta{ :name => "twitter:card",            :content => "player" }
-    %meta{ :name => "twitter:site",            :content => "@wistia" }
-    %meta{ :name => "twitter:title",           :content => @media.name }
-    %meta{ :name => "twitter:url",             :content => item_url(@media) }
-    %meta{ :name => "twitter:description",     :content => @media.long_description.gsub(/(<script.?>)(.?)(<\/script>)/mi, '').gsub(/<[^>]+>/, '').gsub(/\s+/,' ').html_safe }
-    %meta{ :name => "twitter:image",           :content => @media.raw_thumbnail }
-    %meta{ :name => "twitter:player",          :content => "https://fast.wistia.com/embed/iframe/#{@media.hashed_id}?videoWidth=960&videoHeight=#{video_height}&playerColor=#{@media.project.hex_color}&plugin%5BrequireEmail-v1%5D=%7B%22topText%22%3A%22Stay%20up%20to%20date!%22%2C%22bottomText%22%3A%22Enter%20your%20email%20to%20stay%20up%20to%20date%20as%5Cnwe%20add%20more%20content%20to%20the%20Learning%20Center.%22%2C%22time%22%3A%22end%22%2C%22allowRewatch%22%3Atrue%2C%22style%22%3A%7B%22backgroundColor%22%3A%22%23303030%22%7D%7D" }
-    %meta{ :name => "twitter:player:width",    :content => 960 }
-    %meta{ :name => "twitter:player:height",   :content => video_height }
+
     - if @media.next_video
       %a.next{ :href => item_path(@media.next_video) }
 
@@ -54,27 +47,28 @@
 
 
     #disqus_thread
-    :javascript
-      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-      var disqus_shortname = 'wistialearning'; // required: replace example with your forum shortname
-      var disqus_identifier = '#{@media.hashed_id}';
+      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> 
 
-      /* * * DON'T EDIT BELOW THIS LINE * * */
-      (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a> 
-
-:javascript
-  var project = #{@media.project.to_json(include: :media)};
-  var project_color = "#{@media.project.color}";
 
 = javascript_include_tag "hover_descriptions"
 
 :javascript
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'disqus_shortname'; // required: replace example with your forum shortname
+  var disqus_identifier = '#{@media.hashed_id}';
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+
+:javascript
   $(document).ready(function() {
+
+    var project = #{@media.project.to_json(include: :media)};
+    var project_color = "#{@media.project.color}";
 
     $("#media_carousel").jcarousel({
       visible: 4,

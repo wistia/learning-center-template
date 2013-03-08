@@ -63,52 +63,26 @@
   #container
     .section
       .title Share this!
-      .socializing
-        <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-        <script type="IN/Share" data-url="http://wistia.com/learning" data-counter="top"></script>
-
-        <iframe src="//www.facebook.com/plugins/like.php?href&amp;send=false&amp;layout=box_count&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=90&href=http%3A%2F%2Fwistia.com%2Flearning" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:70px;" allowTransparency="true"></iframe>
-        
-        <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://wistia.com/learning" data-text="Become a video marketing jedi with the Wistia Learning Center" data-via="wistia" data-count="vertical">Tweet</a>
-      :javascript
-        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+      %p
+        Include links to Twitter, Facebook, and Digg (Digg? Really?)
 
     .divider
     
     .section
-      %a{ :href => "http://50grove.wistia.com"}
-        .title
-          50 Grove
-          .arrow
-        %p 50 Grove is a catalog of amazing<br /> video producers that are trusted<br /> by Wistia.
+      %p
+        More helpful info!
 
     .divider
 
     .section
-      %a{ :href => "http://wistia.com/blog"}
-        .title
-          Blog
-          .arrow
-        %p Find more videos, experiments,<br /> and learning on our blog.
-
-:javascript
-  $(function () {
-    $("#ankle .section .title").hover(function () {
-      $(".arrow", this).css("background-position", "0 -14px");
-      $(this).css('color', '#5a5a5a');
-    }, function () {
-      $(".arrow", this).css("background-position", "");
-      $(this).css('color', '#6a6a6a');
-    });
-  });
-
-:javascript
-  var projects = #{@projects.to_json(include: :media)};
+      %p
+        And a third helpful section!
 
 = javascript_include_tag "hover_descriptions"
 
 :javascript
   $(document).ready(function () {
+    var projects = #{@projects.to_json(include: :media)};
 
     $(".media_carousel").jcarousel({
       visible: 7
