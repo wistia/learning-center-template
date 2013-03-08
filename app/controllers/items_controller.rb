@@ -14,6 +14,8 @@ class ItemsController < ApplicationController
     elsif item.is_a?(Media)
       @media = item
       @stylesheet = 'media'
+      @stylesheets = "jcarousel_media.css"
+      @javascripts = "jquery.jcarousel.min.js"
       render 'medias/show'
     else
       raise "Item is neither a Project or a Media. Whaaaaaaa?"
